@@ -14,10 +14,10 @@
 ?>
 <?php include "ad-back-admin-header.php" ?>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-<h1><?php _e('AdBack : The stats of your AdBlock audience', 'adback-solution-to-adblock'); ?></h1>
+<h1><?php _e('AdBack : The stats of your AdBlock audience', 'adback-solution-to-adblock-lite'); ?></h1>
 
 <p>
-    <?php _e('Statistics description', 'adback-solution-to-adblock'); ?>
+    <?php _e('Statistics description', 'adback-solution-to-adblock-lite'); ?>
 </p>
 <hr class="clear">
 

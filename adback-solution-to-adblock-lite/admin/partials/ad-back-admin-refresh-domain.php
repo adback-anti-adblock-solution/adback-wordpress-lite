@@ -13,7 +13,7 @@
  */
 ?>
 
-<h1 class="ab-lefty"><?php _e('Checking credentials...', 'adback-solution-to-adblock'); ?></h1>
+<h1 class="ab-lefty"><?php _e('Refresh domain...', 'adback-solution-to-adblock-lite'); ?></h1>
 
 <script>
 	setTimeout(function(){

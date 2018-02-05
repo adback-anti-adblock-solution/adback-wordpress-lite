@@ -109,27 +109,27 @@ class Ad_Back_Admin extends Ad_Back_Generic
 
         $translation_array = array(
             'bounce' => __('Bounce rate of adblocker users', 'ad-back'),
-            'ad_blocker' => __('Adblocker activation / deactivation', 'adback-solution-to-adblock'),
-            'ad_blocker_percent' => __('Ad blocker percent', 'adback-solution-to-adblock'),
-            'blocked_page_view' => __('Blocked page views', 'adback-solution-to-adblock'),
-            'browser' => __('Browser', 'adback-solution-to-adblock'),
-            'os' => __('OS', 'adback-solution-to-adblock'),
-            'percent_adblock_users' => __('Percent adblock users', 'adback-solution-to-adblock'),
-            'percent_bounce_adblock_users' => __('Percent bounce adblock users', 'adback-solution-to-adblock'),
-            'percent_bounce_all_users' => __('Percent bounce all users', 'adback-solution-to-adblock'),
-            'oops' => __('Oops...', 'adback-solution-to-adblock'),
-            'invalid_email_or_password' => __('Invalid email or password', 'adback-solution-to-adblock'),
-            'the_key_email_and_domain_fields_should_be_fill' => __('The key, email and domain fields should be filled', 'adback-solution-to-adblock'),
-            'the_email_and_password_fields_should_be_fill' => __('The email and password fields should be filled', 'adback-solution-to-adblock'),
-            'there_is_an_error_in_the_registration' => __('There is an error in the registration: {0}', 'adback-solution-to-adblock'),
-            'users_having_ad_blocker' => __('Users having ad blocker', 'adback-solution-to-adblock'),
-            'users_who_have_disabled_an_ad_blocker' => __('Users who have disabled an ad blocker', 'adback-solution-to-adblock'),
-            'percent_page_view_with_ad_block' => __('Percent page view with AdBlock', 'adback-solution-to-adblock'),
-            'percent_page_view' => __('Percent page view', 'adback-solution-to-adblock'),
-            'days' => __('days', 'adback-solution-to-adblock'),
-            'loading' => __('Loading ...', 'adback-solution-to-adblock'),
-            'no_data' => __('No Data', 'adback-solution-to-adblock'),
-            'error' => __('Something went wrong', 'adback-solution-to-adblock'),
+            'ad_blocker' => __('Adblocker activation / deactivation', 'adback-solution-to-adblock-lite'),
+            'ad_blocker_percent' => __('Ad blocker percent', 'adback-solution-to-adblock-lite'),
+            'blocked_page_view' => __('Blocked page views', 'adback-solution-to-adblock-lite'),
+            'browser' => __('Browser', 'adback-solution-to-adblock-lite'),
+            'os' => __('OS', 'adback-solution-to-adblock-lite'),
+            'percent_adblock_users' => __('Percent adblock users', 'adback-solution-to-adblock-lite'),
+            'percent_bounce_adblock_users' => __('Percent bounce adblock users', 'adback-solution-to-adblock-lite'),
+            'percent_bounce_all_users' => __('Percent bounce all users', 'adback-solution-to-adblock-lite'),
+            'oops' => __('Oops...', 'adback-solution-to-adblock-lite'),
+            'invalid_email_or_password' => __('Invalid email or password', 'adback-solution-to-adblock-lite'),
+            'the_key_email_and_domain_fields_should_be_fill' => __('The key, email and domain fields should be filled', 'adback-solution-to-adblock-lite'),
+            'the_email_and_password_fields_should_be_fill' => __('The email and password fields should be filled', 'adback-solution-to-adblock-lite'),
+            'there_is_an_error_in_the_registration' => __('There is an error in the registration: {0}', 'adback-solution-to-adblock-lite'),
+            'users_having_ad_blocker' => __('Users having ad blocker', 'adback-solution-to-adblock-lite'),
+            'users_who_have_disabled_an_ad_blocker' => __('Users who have disabled an ad blocker', 'adback-solution-to-adblock-lite'),
+            'percent_page_view_with_ad_block' => __('Percent page view with AdBlock', 'adback-solution-to-adblock-lite'),
+            'percent_page_view' => __('Percent page view', 'adback-solution-to-adblock-lite'),
+            'days' => __('days', 'adback-solution-to-adblock-lite'),
+            'loading' => __('Loading ...', 'adback-solution-to-adblock-lite'),
+            'no_data' => __('No Data', 'adback-solution-to-adblock-lite'),
+            'error' => __('Something went wrong', 'adback-solution-to-adblock-lite'),
         );
 
         if ($this->isConnected()) {
@@ -246,56 +246,6 @@ class Ad_Back_Admin extends Ad_Back_Generic
      *
      * @since    1.0.0
      */
-    public function displayPluginMessagePage()
-    {
-        if ($this->isConnected()) {
-            if ($this->getDomain() == '') {
-                $this->askDomain();
-            }
-            include_once('partials/ad-back-admin-message-display.php');
-        } else {
-            if (isset($_GET['access_token'])) {
-                $this->saveToken(array(
-                    'access_token' => $_GET['access_token'],
-                    'refresh_token' => '',
-                ));
-                include_once('partials/ad-back-admin-redirect.php');
-            } else {
-                include_once('partials/ad-back-admin-login-display.php');
-            }
-        }
-    }
-
-    /**
-     * Render the placements page for this plugin.
-     *
-     * @since    1.0.0
-     */
-    public function displayPluginPlacementsPage()
-    {
-        if ($this->isConnected()) {
-            if ($this->getDomain() == '') {
-                $this->askDomain();
-            }
-            include_once('partials/ad-back-admin-placements-display.php');
-        } else {
-            if (isset($_GET['access_token'])) {
-                $this->saveToken(array(
-                    'access_token' => $_GET['access_token'],
-                    'refresh_token' => '',
-                ));
-                include_once('partials/ad-back-admin-redirect.php');
-            } else {
-                include_once('partials/ad-back-admin-login-display.php');
-            }
-        }
-    }
-
-    /**
-     * Render the message page for this plugin.
-     *
-     * @since    1.0.0
-     */
     public function displayPluginDiagnosticPage()
     {
         global $wpdb;
@@ -363,11 +313,9 @@ class Ad_Back_Admin extends Ad_Back_Generic
 
         add_menu_page('AdBack', 'AdBack', 'manage_options', 'ab', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
 
-        add_submenu_page('ab', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock'), 'manage_options', 'ab', array($this, 'displayPluginStatsPage'));
-        add_submenu_page('ab', 'AdBack Message', __('Message', 'adback-solution-to-adblock'), 'manage_options', 'ab-message', array($this, 'displayPluginMessagePage'));
-        add_submenu_page('ab', 'AdBack Placements', __('Placements', 'adback-solution-to-adblock'), 'manage_options', 'ab-placements', array($this, 'displayPluginPlacementsPage'));
-        add_submenu_page('ab', 'AdBack Settings', __('Settings', 'adback-solution-to-adblock'), 'manage_options', 'ab-settings', array($this, 'displayPluginSettingsPage'));
-        add_submenu_page('ab', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock'), 'manage_options', 'ab-diagnostic', array($this, 'displayPluginDiagnosticPage'));
+        add_submenu_page('ab', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab', array($this, 'displayPluginStatsPage'));
+        add_submenu_page('ab', 'AdBack Settings', __('Settings', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-settings', array($this, 'displayPluginSettingsPage'));
+        add_submenu_page('ab', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-diagnostic', array($this, 'displayPluginDiagnosticPage'));
 
         add_plugins_page('ab', '', 'manage_options', 'ab-refresh-domain', array($this, 'displayPluginRefreshDomainPage'));
     }
@@ -447,11 +395,11 @@ class Ad_Back_Admin extends Ad_Back_Generic
 		                <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-settings')) . '" method="POST">
                         <div class="adback-incentive-button-container">
                             <div class="adback-incentive-button-border">
-                                <input type="submit" class="adback-incentive-button" value="' . __("Activate my AdBack plugin", 'adback-solution-to-adblock') . '">
+                                <input type="submit" class="adback-incentive-button" value="' . __("Activate my AdBack plugin", 'adback-solution-to-adblock-lite') . '">
                             </div>
                         </div>
                         <div class="adback-incentive-description">
-                            ' . __("It's time to analyze your adblock users, set up your AdBack account!", 'adback-solution-to-adblock') . '
+                            ' . __("It's time to analyze your adblock users, set up your AdBack account!", 'adback-solution-to-adblock-lite') . '
                         </div>
                     </div>
                     </form>

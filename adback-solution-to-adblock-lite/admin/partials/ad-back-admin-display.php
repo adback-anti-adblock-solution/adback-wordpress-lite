@@ -16,8 +16,8 @@
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <div id="ab-full-app">
     <div id="adb-stats"
-         data-reviewlink="https://wordpress.org/support/plugin/adback-solution-to-adblock/reviews/"
-         data-supportlink="https://wordpress.org/support/plugin/adback-solution-to-adblock">
+         data-reviewlink="https://wordpress.org/support/plugin/adback-solution-to-adblock-lite/reviews/"
+         data-supportlink="https://wordpress.org/support/plugin/adback-solution-to-adblock-lite">
     </div>
 </div>
 
@@ -33,7 +33,7 @@
         } else {
             (function ($) {
                 $("div[data-ab-graph]").each(function () {
-                    $(this).append('<?php esc_js(printf(__('No data available, please <a href="%s">refresh domain</a>', 'adback-solution-to-adblock'),
+                    $(this).append('<?php esc_js(printf(__('No data available, please <a href="%s">refresh domain</a>', 'adback-solution-to-adblock-lite'),
                         esc_url(home_url('/wp-admin/admin.php?page=ab-refresh-domain')))); ?>');
                 });
             })(jQuery);

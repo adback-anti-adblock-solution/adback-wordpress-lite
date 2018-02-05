@@ -163,7 +163,7 @@ SQL;
 
         if ('' == $accessToken && '' == $savedToken->access_token) {
             $notices = get_option('adback_deferred_admin_notices', array());
-            $notices[] = sprintf(__('Registration error', 'adback-solution-to-adblock'), get_admin_url($blogId, 'admin.php?page=ab-settings'));
+            $notices[] = sprintf(__('Registration error', 'adback-solution-to-adblock-lite'), get_admin_url($blogId, 'admin.php?page=ab-settings'));
             update_option('adback_deferred_admin_notices', $notices);
 
             $errorMsg = isset($data['error']['message']) ? $data['error']['message'] : 'error';

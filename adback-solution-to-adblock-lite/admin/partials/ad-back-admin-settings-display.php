@@ -21,26 +21,26 @@
 
                 <div id="ab-configuration-form"></div>
                 <section style="background-color:transparent;">
-                    <h4 class="header-section"><?php esc_html_e('Get more statistics', 'adback-solution-to-adblock'); ?></h4>
+                    <h4 class="header-section"><?php esc_html_e('Get more statistics', 'adback-solution-to-adblock-lite'); ?></h4>
                     <hr/>
                     <div class="section-content">
                         <button id="ab-website" class="btn-generic-save" primary
-                                m-full><?php esc_html_e('Redirect me to my AdBack dashboard', 'adback-solution-to-adblock'); ?></button>
+                                m-full><?php esc_html_e('Redirect me to my AdBack dashboard', 'adback-solution-to-adblock-lite'); ?></button>
                     </div>
                 </section>
                 <section style="background-color:transparent;">
-                    <h4 class="header-section"><?php esc_html_e('Adback Account', 'adback-solution-to-adblock'); ?></h4>
+                    <h4 class="header-section"><?php esc_html_e('Adback Account', 'adback-solution-to-adblock-lite'); ?></h4>
                     <hr/>
                     <div class="section-content">
                         <button id="ab-logout" class="btn-generic-save" primary
-                                m-full><?php esc_html_e('Log out', 'adback-solution-to-adblock'); ?></button>
+                                m-full><?php esc_html_e('Log out', 'adback-solution-to-adblock-lite'); ?></button>
                     </div>
                 </section>
             </div>
             <div col="1/6">
                 <div id="adb-sidebar-standalone"
-                     data-reviewlink="https://wordpress.org/support/plugin/adback-solution-to-adblock/reviews/"
-                     data-supportlink="https://wordpress.org/support/plugin/adback-solution-to-adblock">
+                     data-reviewlink="https://wordpress.org/support/plugin/adback-solution-to-adblock-lite/reviews/"
+                     data-supportlink="https://wordpress.org/support/plugin/adback-solution-to-adblock-lite">
                 </div>
             </div>
         </grid>

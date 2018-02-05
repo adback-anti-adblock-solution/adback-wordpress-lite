@@ -35,7 +35,7 @@ class Ad_Back_External_Checker
 
         if (is_array($wpRocketSettings) && in_array($wpRocketSettings['lazyload_iframes'], array(1, true, '1'))) {
             $notices = get_option('adback_deferred_admin_notices', array());
-            $notices[] = __('There is an incompatibility between the WP Rocket plugin and AdBack. Please uncheck the box "Enable for iframes and videos" in Settings > WP Rocket > Basic > LazyLoad to continue using AdBack. This change won\'t interfere with the operation of your website.', 'adback-solution-to-adblock');
+            $notices[] = __('There is an incompatibility between the WP Rocket plugin and AdBack. Please uncheck the box "Enable for iframes and videos" in Settings > WP Rocket > Basic > LazyLoad to continue using AdBack. This change won\'t interfere with the operation of your website.', 'adback-solution-to-adblock-lite');
             update_option('adback_deferred_admin_notices', $notices);
         }
 
@@ -43,7 +43,7 @@ class Ad_Back_External_Checker
 
         if (is_array($wpRocketLazyLoadSettings) && in_array($wpRocketLazyLoadSettings['iframes'], array(1, true, '1'))) {
             $notices = get_option('adback_deferred_admin_notices', array());
-            $notices[] = __('There is an incompatibility between the LazyLoad plugin and AdBack. Please uncheck the box "iframes and videos" in Settings > LazyLoad to continue using AdBack. This change won\'t interfere with the operation of your website.', 'adback-solution-to-adblock');
+            $notices[] = __('There is an incompatibility between the LazyLoad plugin and AdBack. Please uncheck the box "iframes and videos" in Settings > LazyLoad to continue using AdBack. This change won\'t interfere with the operation of your website.', 'adback-solution-to-adblock-lite');
             update_option('adback_deferred_admin_notices', $notices);
         }
     }

@@ -13,15 +13,15 @@
  * @package           Ad_Back
  *
  * @wordpress-plugin
- * Plugin Name:       AdBack solution to adblock
+ * Plugin Name:       AdBack solution to adblock (Lite)
  * Plugin URI:        adback.co
  * Description:       With AdBack, access analytics about adblocker users, address them personalized messages, propose alternative solutions to advertising (video, survey).
- * Version:           2.9.5
+ * Version:           0.1.0
  * Author:            AdBack
  * Author URI:        https://www.adback.co
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       adback-solution-to-adblock
+ * Text Domain:       adback-solution-to-adblock-lite
  * Domain Path:       /languages
  */
 
@@ -115,7 +115,7 @@ function adback_plugin_display() {
 }
 
 function adback_new_blog($blogId) {
-    if (is_plugin_active_for_network( 'adback-solution-to-adblock/ad-back.php') ) {
+    if (is_plugin_active_for_network( 'adback-solution-to-adblock-lite/ad-back.php') ) {
         require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-activator.php';
 
         switch_to_blog($blogId);

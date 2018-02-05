@@ -1,10 +1,10 @@
-=== AdBack solution to adblock ===
+=== AdBack solution to adblock (Lite) ===
 Contributors: getadback
 Donate link: https://www.adback.co
 Tags: adblock, analytics, message, detection, detect, block, ad block, ads, advertising, adblock killer, anti adblock, adblocker, popup, notification, message, custom, personalize, analyze, stats, adblocker, dashboard widget, block adblock, ghostery, ublock, adblock plus, ad free
 Requires at least: 3.0.1
 Tested up to: 4.9
-Stable tag: 2.9.5
+Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,7 +64,7 @@ You can personalize your messages with colors, logos, different themes and targe
 
 2) Connect to your WordPress interface in admin mode and go to the “Plugins” tab and “Add new”. Then click on “Upload Plugin” at the top of the page
 
-3) You can upload from your computer the AdBack plugin recently downloaded by clicking on “choose file”. Choose the zip folder “adback-solution-to-adblock.zip”
+3) You can upload from your computer the AdBack plugin recently downloaded by clicking on “choose file”. Choose the zip folder “adback-solution-to-adblock-lite.zip”
 
 4) Once the document selected, click on “Install now”. WordPress will install the plugin. Once installed, click on “Activate Plugin”
 
@@ -116,183 +116,5 @@ We propose:
 
 == Changelog ==
 
-= 2.9.5 =
-* Updated css and trad update
-
-= 2.9.4 =
-* Version tag update
-
-= 2.9.3 =
-* Updated incentive display
-
-= 2.9.2 =
-* Updated setting page
-
-= 2.9.1 =
-* Fix proxy Transfer-Encoding header possible issue
-* Updated login page and incentive trigger
-
-= 2.9.0 =
-* Ensure php5.3 compatibility
-
-= 2.8.0 =
-* Update login page and registration error messages
-
-= 2.7.0 =
-* Add some incompatibility check with WP Rocket plugins
-
-= 2.6.3 =
-* Fix locale registration
-
-= 2.6.2 =
-* Modify script content condition
-* Send wordpress activation type
-* Add protection if array not present in diagnostic page
-
-= 2.6.1 =
-* Add missing file
-
-= 2.6.0 =
-* Add unified monetization form
-
-= 2.5.5 =
-* Do not save empty tags
-
-= 2.5.4 =
-* Update connection check url
-
-= 2.5.3 =
-* Update proxy script
-
-= 2.5.2 =
-* Dump rewrite rules in diagnostic page
-
-= 2.5.1 =
-* Fix empty array analysis
-
-= 2.5.0 =
-* Update requirements for wordpress 4.9
-
-= 2.4.7 =
-* Add missing Adikteev url
-
-= 2.4.6 =
-* Enqueue scripts in footer
-
-= 2.4.5 =
-* Update plugin description
-
-= 2.4.4 =
-* Fix activation deactivation of plugin
-
-= 2.4.3 =
-* Fix validator to avoid endpoint override
-
-= 2.4.2 =
-* Fix update or insert database that made some performance issue
-* Add validator on rewrite rule to avoid conflict with existing urls
-
-= 2.4.1 =
-* Fix proxy url
-* Fix database version
-
-= 2.4.0 =
-* Include full script inside the page
-* Allow data to transit through the internal proxy if permalink are configured
-
-= 2.3.1 =
-* External library fix
-
-= 2.3.0 =
-* List, create and edit IAB banners
-
-= 2.2.1 =
-* Show IAB banners
-
-= 2.2.0 =
-* Add multisite support
-
-= 2.1.2 =
-* Updated translation
-
-= 2.1.1 =
-* Form fix
-
-= 2.1.0 =
-* Diagnostic page
-* Product tool
-
-= 2.0.1 =
-* Fix
-
-= 2.0.0 =
-* Major update
-
-= 1.2.6 =
-* Fix url lib js
-
-= 1.2.5 =
-* Global datepicker
-
-= 1.2.4 =
-* Fix for PHP version prior to 5.5
-* Global header
-
-= 1.2.3 =
-* Suppress debug data
-
-= 1.2.2 =
-* Automatic registration fixed
-
-= 1.2.1 =
-* Translations updates
-
-= 1.2.0 =
-* Automatic registration on activation
-* Reminder about custom message activation added
-* Custom message page updates
-* Dashboard widget added
-* Plugin menu updates
-
-= 1.1.9 =
-* Clean unused method
-
-= 1.1.8 =
-* Tag update
-
-= 1.1.7 =
-* Typo
-
-= 1.1.6 =
-* Fixes
-
-= 1.1.5 =
-* Updated translations
-
-= 1.1.4 =
-* Add install tab in WP.org
-* Add option to not show the custom when user is logged
-* Add notice if not connected
-* Add settings link
-
-= 1.1.3 =
-* First logged version
-
-== Upgrade Notice ==
-= 2.9.0 =
-This version ensure the php5.3 version compatibility
-
-= 2.6.1 =
-This version add a missing file
-
-= 2.6.0 =
-This version allows you tu use the unified monetization form to create all the banners you desire.
-
-= 2.5.4 =
-This version fix a check bug on our infrastructure. If you cannot login, you should update immediately
-
-= 2.5.1 =
-This version fix a workflow bug. Upgrade immediately if you haven't activated the plugin
-
-= 2.4.4 =
-This version fix a workflow bug. Upgrade immediately
+= 0.1.0 =
+* Initial version
