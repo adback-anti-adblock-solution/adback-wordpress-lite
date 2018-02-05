@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      2.4.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's upgrade
  *
  * @since      2.4.0
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Updator
+class Ad_Back_Lite_Updator
 {
     /**
      * Short Description. (use period)
@@ -33,7 +33,7 @@ class Ad_Back_Updator
     {
         global $wpdb;
 
-        $currentVersion = (int)get_option("adback_solution_to_adblock_db_version");
+        $currentVersion = (int)get_option("adback_lite_solution_to_adblock_db_version");
 
         if (null === $currentVersion || $currentVersion < 2) {
             $currentVersion = 2;
@@ -48,7 +48,7 @@ class Ad_Back_Updator
             } else {
                 self::createFullTagAndEndPointDatabase();
             }
-            update_option("adback_solution_to_adblock_db_version", $currentVersion);
+            update_option("adback_lite_solution_to_adblock_db_version", $currentVersion);
         }
     }
 
@@ -101,13 +101,13 @@ class Ad_Back_Updator
 
         if (null !== $savedToken || '' !== $savedToken->access_token) {
             if (self::isRewriteRouteEnabled()) {
-                Ad_Back_Post::execute("https://www.adback.co/api/end-point/activate?access_token=" . $savedToken->access_token, array());
-                $endPointData = Ad_Back_Get::execute("https://www.adback.co/api/end-point/me?access_token=" . $savedToken->access_token);
+                Ad_Back_Lite_Post::execute("https://www.adback.co/api/end-point/activate?access_token=" . $savedToken->access_token, array());
+                $endPointData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/end-point/me?access_token=" . $savedToken->access_token);
                 $endPoints = json_decode($endPointData, true);
 
                 // loop while endpoints (next) conflict with rewrite rules, if not, insert all endpoint data
                 for ($i = 0; $i < 5; $i++) {
-                    if (!Ad_Back_Rewrite_Rule_Validator::validate($endPoints['next_end_point'])) {
+                    if (!Ad_Back_Lite_Rewrite_Rule_Validator::validate($endPoints['next_end_point'])) {
                         $wpdb->insert(
                             $table_name_end_point,
                             array(
@@ -119,12 +119,12 @@ class Ad_Back_Updator
                         );
                         break;
                     }
-                    $endPointData = Ad_Back_Get::execute("https://www.adback.co/api/end-point/refresh?access_token=" . $savedToken->access_token);
+                    $endPointData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/end-point/refresh?access_token=" . $savedToken->access_token);
                     $endPoints = json_decode($endPointData, true);
                 }
             }
 
-            $fullScriptData = Ad_Back_Get::execute("https://www.adback.co/api/script/me/full?access_token=" . $savedToken->access_token);
+            $fullScriptData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me/full?access_token=" . $savedToken->access_token);
             $fullScripts = json_decode($fullScriptData, true);
             $types = self::getTypes();
             if (is_array($fullScripts) && !empty($fullScripts) && array_key_exists('script_codes', $fullScripts)) {

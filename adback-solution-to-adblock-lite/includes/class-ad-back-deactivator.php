@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Deactivator
+class Ad_Back_Lite_Deactivator
 {
     /**
      * Short Description. (use period)
@@ -35,7 +35,7 @@ class Ad_Back_Deactivator
 
         $wpdb->query('delete from ' . $wpdb->prefix . 'adback_full_tag');
         $wpdb->query('delete from ' . $wpdb->prefix . 'adback_end_point');
-        delete_option("adback_solution_to_adblock_db_version");
+        delete_option("adback_lite_solution_to_adblock_db_version");
     }
 
     public static function deleteBlog($tables)

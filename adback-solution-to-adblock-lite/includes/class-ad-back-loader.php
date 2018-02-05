@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Loader
+class Ad_Back_Lite_Loader
 {
     /**
      * The array of actions registered with WordPress.

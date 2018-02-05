@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to validate the rewrite rules.
  *
  * @since      2.4.2
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Rewrite_Rule_Validator
+class Ad_Back_Lite_Rewrite_Rule_Validator
 {
     public static function validate($endpoint)
     {
@@ -30,7 +30,7 @@ class Ad_Back_Rewrite_Rule_Validator
 
         /** @var $rule array */
         foreach ($rules as $rule => $rewrite) {
-            if (preg_match('/^' . $endpoint . '.*/', $rule) && false === strpos($rewrite, 'adback_proxy')) {
+            if (preg_match('/^' . $endpoint . '.*/', $rule) && false === strpos($rewrite, 'adback_lite_proxy')) {
                 return true;
             }
         }

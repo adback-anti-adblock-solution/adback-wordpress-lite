@@ -22,7 +22,7 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
+ * @package    Ad_Back_Lite
  */
 
 // If uninstall not called from WordPress, then exit.
@@ -30,7 +30,7 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 	exit;
 }
 
-function adback_delete_tables()
+function adback_lite_delete_tables()
 {
     global $wpdb;
 
@@ -58,9 +58,9 @@ if (is_multisite()) {
 
     foreach ($sites as $blogId) {
         switch_to_blog($blogId);
-        adback_delete_tables();
+        adback_lite_delete_tables();
         restore_current_blog();
     }
 } else {
-    adback_delete_tables();
+    adback_lite_delete_tables();
 }

@@ -8,8 +8,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/admin/partials
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/admin/partials
  */
 
 ?>

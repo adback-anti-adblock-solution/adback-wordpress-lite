@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Activator
+class Ad_Back_Lite_Activator
 {
     const DB_VERSION = 1;
 
@@ -35,7 +35,7 @@ class Ad_Back_Activator
     {
         global $wpdb;
 
-        add_option( "adback_solution_to_adblock_db_version", self::DB_VERSION);
+        add_option( "adback_lite_solution_to_adblock_db_version", self::DB_VERSION);
 
         if (is_multisite() && $networkwide) {
             $sites = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
@@ -115,7 +115,7 @@ class Ad_Back_Activator
                 $locale = 'en';
             }
 
-            $response = Ad_Back_Post::execute('https://www.adback.co/tokenoauth/register/'.$locale, $fields);
+            $response = Ad_Back_Lite_Post::execute('https://www.adback.co/tokenoauth/register/'.$locale, $fields);
             $data = json_decode($response, true);
             $accessToken = '';
             if (array_key_exists('access_token', $data)) {
@@ -162,9 +162,9 @@ SQL;
         $wpdb->query($sql);
 
         if ('' == $accessToken && '' == $savedToken->access_token) {
-            $notices = get_option('adback_deferred_admin_notices', array());
-            $notices[] = sprintf(__('Registration error', 'adback-solution-to-adblock-lite'), get_admin_url($blogId, 'admin.php?page=ab-settings'));
-            update_option('adback_deferred_admin_notices', $notices);
+            $notices = get_option('adback_lite_deferred_admin_notices', array());
+            $notices[] = sprintf(__('Registration error', 'adback-solution-to-adblock-lite'), get_admin_url($blogId, 'admin.php?page=ab-lite-settings'));
+            update_option('adback_lite_deferred_admin_notices', $notices);
 
             $errorMsg = isset($data['error']['message']) ? $data['error']['message'] : 'error';
             update_option('adback_registration_error', $errorMsg);
@@ -172,7 +172,7 @@ SQL;
             delete_option('adback_registration_error');
             $notifyUrl = 'https://www.adback.co/api/plugin-activate/wordpress?access_token=' . $accessToken;
 
-            Ad_Back_Get::execute($notifyUrl);
+            Ad_Back_Lite_Get::execute($notifyUrl);
         }
     }
 }

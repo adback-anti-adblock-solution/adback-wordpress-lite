@@ -8,12 +8,12 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/admin/partials
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/admin/partials
  */
 ?>
 
-<div id="adb-widget" data-links="<?php echo get_admin_url(get_current_blog_id(), 'admin.php?page=ab-settings')?>"></div>
+<div id="adb-widget" data-links="<?php echo get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings')?>"></div>
 <script type="text/javascript">
     window.onload = function() {
         if(typeof adbackjs === 'object') {

@@ -6,10 +6,10 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite
  */
-class Ad_Back_Generic
+class Ad_Back_Lite_Generic
 {
     private $connected = null;
 
@@ -40,11 +40,7 @@ class Ad_Back_Generic
 
             $types = array(
                 'analytics',
-                'message',
-                'product',
-                'banner',
-                'catcher',
-                'iab_banner',
+                'generic',
             );
             foreach ($types as $key => $type) {
                 if (
@@ -81,7 +77,7 @@ SQL;
         $url = 'https://www.adback.co/api/custom-message/update-status?_format=json&access_token=' . $this->getToken()->access_token;
         $displayAsBoolean = 'true' === $display ? true : false;
         $fields = array('display' => $displayAsBoolean);
-        Ad_Back_Post::execute($url, $fields);
+        Ad_Back_Lite_Post::execute($url, $fields);
 
         return true;
     }
@@ -104,7 +100,7 @@ SQL;
             $domain = 'www.adback.co';
             $url = "https://".$domain."/api/test/normal?access_token=" . $token->access_token;
 
-            $result = json_decode(Ad_Back_Get::execute($url), true);
+            $result = json_decode(Ad_Back_Lite_Get::execute($url), true);
             return $this->connected = is_array($result) && array_key_exists("name", $result);
         } else {
             return $this->connected = false;
@@ -146,7 +142,7 @@ SQL;
     {
         $notifyUrl = 'https://www.adback.co/api/plugin-activate/wordpress?access_token=' . $accessToken;
 
-        Ad_Back_Get::execute($notifyUrl);
+        Ad_Back_Lite_Get::execute($notifyUrl);
     }
 
     public function askDomain()
@@ -155,7 +151,7 @@ SQL;
             return null;
         }
 
-        $jsonDomain = Ad_Back_Get::execute("https://www.adback.co/api/script/me?access_token=" . $this->getToken()->access_token);
+        $jsonDomain = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonDomain, true);
         if (isset($result['analytics_domain'])) {
             $this->saveDomain($result['analytics_domain']);
@@ -168,7 +164,7 @@ SQL;
             return null;
         }
 
-        $jsonScripts = Ad_Back_Get::execute("https://www.adback.co/api/script/me?access_token=" . $this->getToken()->access_token);
+        $jsonScripts = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonScripts, true);
 
         return $result;
@@ -180,7 +176,7 @@ SQL;
             return null;
         }
 
-        $jsonScripts = Ad_Back_Get::execute("https://www.adback.co/api/script/me/full?access_token=" . $this->getToken()->access_token);
+        $jsonScripts = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me/full?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonScripts, true);
 
         return $result;
@@ -193,7 +189,7 @@ SQL;
 
     public function ensureSiteIsConfiguredForEndPoints()
     {
-        Ad_Back_Post::execute("https://www.adback.co/api/end-point/activate?access_token=" . $this->getToken()->access_token, array());
+        Ad_Back_Lite_Post::execute("https://www.adback.co/api/end-point/activate?access_token=" . $this->getToken()->access_token, array());
     }
 
     public function askEndPoints()
@@ -202,7 +198,7 @@ SQL;
             return null;
         }
 
-        $jsonEndPoints = Ad_Back_Get::execute("https://www.adback.co/api/end-point/me?access_token=" . $this->getToken()->access_token);
+        $jsonEndPoints = Ad_Back_Lite_Get::execute("https://www.adback.co/api/end-point/me?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonEndPoints, true);
 
         return $result;
@@ -214,7 +210,7 @@ SQL;
             return null;
         }
 
-        $jsonEndPoints = Ad_Back_Get::execute("https://www.adback.co/api/end-point/refresh?access_token=" . $this->getToken()->access_token);
+        $jsonEndPoints = Ad_Back_Lite_Get::execute("https://www.adback.co/api/end-point/refresh?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonEndPoints, true);
 
         return $result;
@@ -228,7 +224,7 @@ SQL;
 
         // loop while endpoints (next) conflict with rewrite rules, if not, insert all endpoint data
         for ($i = 0; $i < 5; $i++) {
-            if (!Ad_Back_Rewrite_Rule_Validator::validate($endPoints['next_end_point'])) {
+            if (!Ad_Back_Lite_Rewrite_Rule_Validator::validate($endPoints['next_end_point'])) {
                 $sql = <<<SQL
 INSERT INTO $table_name_end_point
   (id,old_end_point,end_point,next_end_point) VALUES (%d,%s,%s,%s)
@@ -250,7 +246,7 @@ SQL;
             $endPoints = $this->refreshEndPoints();
         }
 
-        adback_plugin_rules();
+        adback_lite_plugin_rules();
         flush_rewrite_rules();
     }
 
@@ -285,7 +281,7 @@ SQL;
             return null;
         }
 
-        $jsonDomain = Ad_Back_Get::execute("https://www.adback.co/api/subscription/me?access_token=" . $this->getToken()->access_token);
+        $jsonDomain = Ad_Back_Lite_Get::execute("https://www.adback.co/api/subscription/me?access_token=" . $this->getToken()->access_token);
         $result = json_decode($jsonDomain, true);
 
         return $result;

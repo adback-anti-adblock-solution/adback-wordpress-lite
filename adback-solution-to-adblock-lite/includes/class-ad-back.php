@@ -9,8 +9,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Ad_Back
- * @subpackage Ad_Back/includes
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back
+class Ad_Back_Lite
 {
     /**
      * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Ad_Back
      *
      * @since    1.0.0
      * @access   protected
-     * @var      Ad_Back_Loader    $loader    Maintains and registers all hooks for the plugin.
+     * @var      Ad_Back_Lite_Loader    $loader    Maintains and registers all hooks for the plugin.
      */
     protected $loader;
 
@@ -82,10 +82,10 @@ class Ad_Back
      *
      * Include the following files that make up the plugin:
      *
-     * - Ad_Back_Loader. Orchestrates the hooks of the plugin.
-     * - Ad_Back_i18n. Defines internationalization functionality.
-     * - Ad_Back_Admin. Defines all hooks for the admin area.
-     * - Ad_Back_Public. Defines all hooks for the public side of the site.
+     * - Ad_Back_Lite_Loader. Orchestrates the hooks of the plugin.
+     * - Ad_Back_Lite_i18n. Defines internationalization functionality.
+     * - Ad_Back_Lite_Admin. Defines all hooks for the admin area.
+     * - Ad_Back_Lite_Public. Defines all hooks for the public side of the site.
      *
      * Create an instance of the loader which will be used to register the hooks
      * with WordPress.
@@ -118,13 +118,13 @@ class Ad_Back
          */
         require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-ad-back-public.php';
 
-        $this->loader = new Ad_Back_Loader();
+        $this->loader = new Ad_Back_Lite_Loader();
     }
 
     /**
      * Define the locale for this plugin for internationalization.
      *
-     * Uses the Ad_Back_i18n class in order to set the domain and to register the hook
+     * Uses the Ad_Back_Lite_i18n class in order to set the domain and to register the hook
      * with WordPress.
      *
      * @since    1.0.0
@@ -132,7 +132,7 @@ class Ad_Back
      */
     private function setLocale()
     {
-        $plugin_i18n = new Ad_Back_i18n();
+        $plugin_i18n = new Ad_Back_Lite_i18n();
 
         $this->loader->addAction( 'plugins_loaded', $plugin_i18n, 'loadPluginTextdomain' );
     }
@@ -146,7 +146,7 @@ class Ad_Back
      */
     private function defineAdminHooks()
     {
-        $plugin_admin = new Ad_Back_Admin( $this->getPluginName(), $this->getVersion() );
+        $plugin_admin = new Ad_Back_Lite_Admin( $this->getPluginName(), $this->getVersion() );
 
         $this->loader->addAction( 'admin_enqueue_scripts', $plugin_admin, 'enqueueStyles' );
         $this->loader->addAction( 'admin_enqueue_scripts', $plugin_admin, 'enqueueScripts' );
@@ -177,7 +177,7 @@ class Ad_Back
      */
     private function definePublicHooks()
     {
-        $plugin_public = new Ad_Back_Public( $this->getPluginName(), $this->getVersion() );
+        $plugin_public = new Ad_Back_Lite_Public( $this->getPluginName(), $this->getVersion() );
 
         $this->loader->addAction( 'wp_footer', $plugin_public, 'enqueueScripts' );
     }
@@ -208,7 +208,7 @@ class Ad_Back
      * The reference to the class that orchestrates the hooks with the plugin.
      *
      * @since     1.0.0
-     * @return    Ad_Back_Loader    Orchestrates the hooks of the plugin.
+     * @return    Ad_Back_Lite_Loader    Orchestrates the hooks of the plugin.
      */
     public function getLoader()
     {

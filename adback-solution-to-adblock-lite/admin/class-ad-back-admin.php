@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/admin
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/admin
  */
 
 /**
@@ -16,14 +16,14 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/admin
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/admin
  * @author     AdBack <contact@adback.co>
  */
 
 include_once(plugin_dir_path(__FILE__) . '../class-ad-back.php');
 
-class Ad_Back_Admin extends Ad_Back_Generic
+class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
 {
     /**
      * The ID of this plugin.
@@ -67,10 +67,10 @@ class Ad_Back_Admin extends Ad_Back_Generic
          * This function is provided for demonstration purposes only.
          *
          * An instance of this class should be passed to the run() function
-         * defined in Ad_Back_Loader as all of the hooks are defined
+         * defined in Ad_Back_Lite_Loader as all of the hooks are defined
          * in that particular class.
          *
-         * The Ad_Back_Loader will then create the relationship
+         * The Ad_Back_Lite_Loader will then create the relationship
          * between the defined hooks and the functions defined in this
          * class.
          */
@@ -95,10 +95,10 @@ class Ad_Back_Admin extends Ad_Back_Generic
          * This function is provided for demonstration purposes only.
          *
          * An instance of this class should be passed to the run() function
-         * defined in Ad_Back_Loader as all of the hooks are defined
+         * defined in Ad_Back_Lite_Loader as all of the hooks are defined
          * in that particular class.
          *
-         * The Ad_Back_Loader will then create the relationship
+         * The Ad_Back_Lite_Loader will then create the relationship
          * between the defined hooks and the functions defined in this
          * class.
          */
@@ -158,8 +158,8 @@ class Ad_Back_Admin extends Ad_Back_Generic
                 return true;
             }
 
-            if (isset($_GET['page']) && ($_GET['page'] == 'ab' || $_GET['page'] == 'ab-settings' ||
-                    $_GET['page'] == 'ab-message' || $_GET['page'] == 'ab-diagnostic') || $_GET['page'] == 'ab-placements') {
+            if (isset($_GET['page']) && ($_GET['page'] == 'ab-lite' || $_GET['page'] == 'ab-lite-settings' ||
+                    $_GET['page'] == 'ab-lite-message' || $_GET['page'] == 'ab-lite-diagnostic') || $_GET['page'] == 'ab-lite-placements') {
                 return true;
             }
 
@@ -253,7 +253,7 @@ class Ad_Back_Admin extends Ad_Back_Generic
             if ($this->getDomain() === '') {
                 $this->askDomain();
             }
-            $adback = new Ad_Back_Public($this->plugin_name, $this->version);
+            $adback = new Ad_Back_Lite_Public($this->plugin_name, $this->version);
             $adback->enqueueScripts();
             $token = $this->getToken();
             $script = $this->askScripts();
@@ -311,13 +311,13 @@ class Ad_Back_Admin extends Ad_Back_Generic
          *
          */
 
-        add_menu_page('AdBack', 'AdBack', 'manage_options', 'ab', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
+        add_menu_page('AdBack (Lite)', 'AdBack (Lite)', 'manage_options', 'ab-lite', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
 
-        add_submenu_page('ab', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab', array($this, 'displayPluginStatsPage'));
-        add_submenu_page('ab', 'AdBack Settings', __('Settings', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-settings', array($this, 'displayPluginSettingsPage'));
-        add_submenu_page('ab', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-diagnostic', array($this, 'displayPluginDiagnosticPage'));
+        add_submenu_page('ab-lite', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite', array($this, 'displayPluginStatsPage'));
+        add_submenu_page('ab-lite', 'AdBack Settings', __('Settings', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite-settings', array($this, 'displayPluginSettingsPage'));
+        add_submenu_page('ab-lite', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite-diagnostic', array($this, 'displayPluginDiagnosticPage'));
 
-        add_plugins_page('ab', '', 'manage_options', 'ab-refresh-domain', array($this, 'displayPluginRefreshDomainPage'));
+        add_plugins_page('ab-lite', '', 'manage_options', 'ab-lite-refresh-domain', array($this, 'displayPluginRefreshDomainPage'));
     }
 
     public function saveMessageCallback()
@@ -392,7 +392,7 @@ class Ad_Back_Admin extends Ad_Back_Generic
             if (!$this->isConnected()) {
                 echo '<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
 		                <div class="adback-incentive">
-		                <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-settings')) . '" method="POST">
+		                <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings')) . '" method="POST">
                         <div class="adback-incentive-button-container">
                             <div class="adback-incentive-button-border">
                                 <input type="submit" class="adback-incentive-button" value="' . __("Activate my AdBack plugin", 'adback-solution-to-adblock-lite') . '">
@@ -406,7 +406,7 @@ class Ad_Back_Admin extends Ad_Back_Generic
                 </div>';
             }
             require_once plugin_dir_path(__FILE__) . '../includes/class-ad-back-external-checker.php';
-            Ad_Back_External_Checker::check();
+            Ad_Back_Lite_External_Checker::check();
         }
     }
 }

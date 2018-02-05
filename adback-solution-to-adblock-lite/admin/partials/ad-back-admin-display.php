@@ -8,8 +8,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/admin/partials
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/admin/partials
  */
 ?>
 <?php include "ad-back-admin-header.php" ?>
@@ -34,7 +34,7 @@
             (function ($) {
                 $("div[data-ab-graph]").each(function () {
                     $(this).append('<?php esc_js(printf(__('No data available, please <a href="%s">refresh domain</a>', 'adback-solution-to-adblock-lite'),
-                        esc_url(home_url('/wp-admin/admin.php?page=ab-refresh-domain')))); ?>');
+                        esc_url(home_url('/wp-admin/admin.php?page=ab-lite-refresh-domain')))); ?>');
                 });
             })(jQuery);
         }

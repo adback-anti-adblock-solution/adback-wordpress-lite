@@ -6,8 +6,8 @@
  * @link       https://www.adback.co
  * @since      1.0.0
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/public
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/public
  */
 
 /**
@@ -16,14 +16,14 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Ad_Back
- * @subpackage Ad_Back/public
+ * @package    Ad_Back_Lite
+ * @subpackage Ad_Back_Lite/public
  * @author     AdBack
  */
 
 include_once(plugin_dir_path( __FILE__ ) . '../class-ad-back.php');
 
-class Ad_Back_Public extends Ad_Back_Generic
+class Ad_Back_Lite_Public extends Ad_Back_Lite_Generic
 {
     /**
      * The ID of this plugin.
@@ -67,10 +67,10 @@ class Ad_Back_Public extends Ad_Back_Generic
          * This function is provided for demonstration purposes only.
          *
          * An instance of this class should be passed to the run() function
-         * defined in Ad_Back_Loader as all of the hooks are defined
+         * defined in Ad_Back_Lite_Loader as all of the hooks are defined
          * in that particular class.
          *
-         * The Ad_Back_Loader will then create the relationship
+         * The Ad_Back_Lite_Loader will then create the relationship
          * between the defined hooks and the functions defined in this
          * class.
          */
