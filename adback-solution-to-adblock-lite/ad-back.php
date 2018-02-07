@@ -122,13 +122,13 @@ function adback_lite_delete_blog($tables) {
 add_action('admin_notices', 'adback_lite_admin_notices');
 add_action('wpmu_new_blog', 'adback_lite_new_blog');
 add_action('plugins_loaded', 'adback_lite_plugins_loaded');
-add_filter('wpmu_drop_tables', 'adback_delete_blog' );
+add_filter('wpmu_drop_tables', 'adback_lite_delete_blog' );
 register_activation_hook( __FILE__, 'activate_ad_back_lite' );
 register_deactivation_hook( __FILE__, 'deactivate_ad_back_lite' );
 //add rewrite rules in case another plugin flushes rules
-add_action('init', 'adback_plugin_rules');
+add_action('init', 'adback_lite_plugin_rules');
 //add plugin query vars (product_id) to wordpress
-add_filter('query_vars', 'adback_plugin_query_vars');
+add_filter('query_vars', 'adback_lite_plugin_query_vars');
 
 /**
  * The core plugin class that is used to define internationalization,
