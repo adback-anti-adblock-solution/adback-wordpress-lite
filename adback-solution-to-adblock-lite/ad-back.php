@@ -104,6 +104,16 @@ function adback_lite_plugin_query_vars($vars) {
     return $vars;
 }
 
+function adback_lite_plugin_display() {
+    $adback_proxy_page = get_query_var('pagename');
+    if ('adback_proxy' == $adback_proxy_page):
+        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-proxy.php';
+        $adback_request = get_query_var('adback_request');
+        Ad_Back_Lite_Proxy::execute($adback_request);
+        exit;
+    endif;
+}
+
 function adback_lite_new_blog($blogId) {
     if (is_plugin_active_for_network( 'adback-solution-to-adblock-lite/ad-back.php') ) {
         require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-activator.php';
@@ -122,13 +132,14 @@ function adback_lite_delete_blog($tables) {
 add_action('admin_notices', 'adback_lite_admin_notices');
 add_action('wpmu_new_blog', 'adback_lite_new_blog');
 add_action('plugins_loaded', 'adback_lite_plugins_loaded');
-add_filter('wpmu_drop_tables', 'adback_delete_blog' );
+add_filter('wpmu_drop_tables', 'adback_lite_delete_blog' );
 register_activation_hook( __FILE__, 'activate_ad_back_lite' );
 register_deactivation_hook( __FILE__, 'deactivate_ad_back_lite' );
 //add rewrite rules in case another plugin flushes rules
-add_action('init', 'adback_plugin_rules');
+add_action('init', 'adback_lite_plugin_rules');
 //add plugin query vars (product_id) to wordpress
-add_filter('query_vars', 'adback_plugin_query_vars');
+add_filter('query_vars', 'adback_lite_plugin_query_vars');
+add_filter('template_redirect', 'adback_lite_plugin_display');
 
 /**
  * The core plugin class that is used to define internationalization,

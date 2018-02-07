@@ -51,16 +51,18 @@ function adback_lite_delete_tables()
     $wpdb->query($sql);
 }
 
-if (is_multisite()) {
-    global $wpdb;
+if (!is_plugin_active('adback-solution-to-adblock/ad-back.php')) {
+    if (is_multisite()) {
+        global $wpdb;
 
-    $sites = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
+        $sites = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs");
 
-    foreach ($sites as $blogId) {
-        switch_to_blog($blogId);
+        foreach ($sites as $blogId) {
+            switch_to_blog($blogId);
+            adback_lite_delete_tables();
+            restore_current_blog();
+        }
+    } else {
         adback_lite_delete_tables();
-        restore_current_blog();
     }
-} else {
-    adback_lite_delete_tables();
 }
