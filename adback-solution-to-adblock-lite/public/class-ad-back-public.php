@@ -22,6 +22,7 @@
  */
 
 include_once(plugin_dir_path( __FILE__ ) . '../class-ad-back.php');
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 class Ad_Back_Lite_Public extends Ad_Back_Lite_Generic
 {
@@ -74,6 +75,10 @@ class Ad_Back_Lite_Public extends Ad_Back_Lite_Generic
          * between the defined hooks and the functions defined in this
          * class.
          */
+
+        if (is_plugin_active('adback-solution-to-adblock/ad-back.php')) {
+            return;
+        }
 
         $elements = $this->getMyInfo();
 
