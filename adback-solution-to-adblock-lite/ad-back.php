@@ -104,6 +104,16 @@ function adback_lite_plugin_query_vars($vars) {
     return $vars;
 }
 
+function adback_lite_plugin_display() {
+    $adback_proxy_page = get_query_var('pagename');
+    if ('adback_proxy' == $adback_proxy_page):
+        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-proxy.php';
+        $adback_request = get_query_var('adback_request');
+        Ad_Back_Lite_Proxy::execute($adback_request);
+        exit;
+    endif;
+}
+
 function adback_lite_new_blog($blogId) {
     if (is_plugin_active_for_network( 'adback-solution-to-adblock-lite/ad-back.php') ) {
         require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-activator.php';
@@ -129,6 +139,7 @@ register_deactivation_hook( __FILE__, 'deactivate_ad_back_lite' );
 add_action('init', 'adback_lite_plugin_rules');
 //add plugin query vars (product_id) to wordpress
 add_filter('query_vars', 'adback_lite_plugin_query_vars');
+add_filter('template_redirect', 'adback_lite_plugin_display');
 
 /**
  * The core plugin class that is used to define internationalization,
