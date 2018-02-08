@@ -43,6 +43,7 @@ class Ad_Back_Lite_Generic
             $types = array(
                 'analytics',
                 'generic',
+                'iab_banner',
             );
             foreach ($types as $key => $type) {
                 if (
