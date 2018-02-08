@@ -94,5 +94,19 @@ class Ad_Back_Lite_Public extends Ad_Back_Lite_Generic
                 }
             }
         }
+
+        $title = __('Click the ad', 'adback-solution-to-adblock-lite');
+        $message = __('Disable your adblocker and reload the page to access this website', 'adback-solution-to-adblock-lite');
+        $button = __('Access this website without ads', 'adback-solution-to-adblock-lite');
+
+        echo <<<JS
+        <script type='text/javascript'>
+            var adback_wording = {};
+            adback_wording['title'] = "{$title}";
+            adback_wording['message'] = "{$message}";
+            adback_wording['button'] = "{$button}";
+        </script>
+JS;
+
     }
 }
