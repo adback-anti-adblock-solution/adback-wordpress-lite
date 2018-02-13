@@ -391,8 +391,8 @@ class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
 
             if (!$this->isConnected()) {
                 echo '<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
-		                <div class="adback-incentive">
-		                <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings')) . '" method="POST">
+                        <div class="adback-incentive">
+                        <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings')) . '" method="POST">
                         <div class="adback-incentive-button-container">
                             <div class="adback-incentive-button-border">
                                 <input type="submit" class="adback-incentive-button" value="' . __("Activate my AdBack plugin", 'adback-solution-to-adblock-lite') . '">

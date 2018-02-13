@@ -16,7 +16,7 @@
 <h1 class="ab-lefty"><?php _e('Refresh domain...', 'adback-solution-to-adblock-lite'); ?></h1>
 
 <script>
-	setTimeout(function(){
-	    	window.location.href = '<?php echo $_SERVER['PHP_SELF'] . '?page=ab'; ?>';
-	}, 2000);
+    setTimeout(function(){
+            window.location.href = '<?php echo $_SERVER['PHP_SELF'] . '?page=ab-lite'; ?>';
+    }, 2000);
 </script>
