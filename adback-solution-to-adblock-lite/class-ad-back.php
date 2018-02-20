@@ -16,7 +16,7 @@ class Ad_Back_Lite_Generic
     public function getMyInfo()
     {
         global $wpdb; // this is how you get access to the database
-        require_once(__DIR__ . '/includes/ad-back-rewrite-rule-validator.php');
+        require_once(dirname(__FILE__) . '/includes/ad-back-rewrite-rule-validator.php');
 
         $table_name = $wpdb->prefix . 'adback_full_tag';
         $blogId = get_current_blog_id();

@@ -60,7 +60,7 @@ class Ad_Back_Lite_Updator
         global $wpdb;
 
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        require_once(__DIR__ . '/ad-back-rewrite-rule-validator.php');
+        require_once(dirname(__FILE__) . '/ad-back-rewrite-rule-validator.php');
 
         $charset_collate = $wpdb->get_charset_collate();
 
