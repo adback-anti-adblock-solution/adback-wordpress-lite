@@ -76,15 +76,18 @@ class Ad_Back_Lite_Proxy
 
         $response = self::proxy_request($destinationURL, $data, $method, $params, $ip);
         $headerArray = explode("\r\n", $response['header']);
+
         $is_chunked = false;
         $chunk_decode_ok = true;
+
         foreach($headerArray as $headerLine) {
             // Toggle chunk merging when appropriate
-            if ($headerLine == "Transfer-Encoding: chunked") {
+            if (strtolower($headerLine) == "transfer-encoding: chunked") {
                 $is_chunked = true;
             }
         }
         $contents = $response['content'];
+
         if ($is_chunked) {
             $decodedContents = @self::decode_chunked($contents);
 
@@ -95,10 +98,17 @@ class Ad_Back_Lite_Proxy
             }
         }
 
+        while (0 === mb_strpos($contents , "\x1f" . "\x8b" . "\x08")) {
+            $contents = @gzdecode($contents);
+        }
+
         foreach ($headerArray as $header) {
             if (
-                strpos(strtolower($header), 'transfer-encoding') === false
-                || (strpos(strtolower($header), 'transfer-encoding') !== false && $chunk_decode_ok === false)
+                (
+                    strpos(strtolower($header), 'transfer-encoding') === false
+                    || (strpos(strtolower($header), 'transfer-encoding') !== false && $chunk_decode_ok === false)
+                )
+                && strpos(strtolower($header), 'content-encoding') === false
             ) {
                 header($header, true);
             }
