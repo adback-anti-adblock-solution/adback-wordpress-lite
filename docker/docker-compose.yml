@@ -1,23 +1,27 @@
-adback_db_lite:
-  image: mysql:5.7
-  volumes:
-   - ./db_data:/var/lib/mysql
-  environment:
-   MYSQL_ROOT_PASSWORD: wordpress
-   MYSQL_DATABASE: wordpress
-   MYSQL_USER: wordpress
-   MYSQL_PASSWORD: wordpress
-  ports:
-   - "3309:3306"
+version: '2'
+services:
 
-wordpress_lite:
-  links:
-   - adback_db_lite
-  image: wordpress:latest
-  volumes:
-   - ./../adback-solution-to-adblock-lite:/var/www/html/wp-content/plugins/adback-solution-to-adblock-lite
-  ports:
-   - "8101:80"
-  environment:
-   WORDPRESS_DB_HOST: adback_db:3306
-   WORDPRESS_DB_PASSWORD: wordpress
+  wordpress_lite:
+    image: wordpress:latest
+    volumes:
+    - ./../adback-solution-to-adblock-lite:/var/www/html/wp-content/plugins/adback-solution-to-adblock-lite
+    ports:
+    - "8101:80"
+    environment:
+      WORDPRESS_DB_HOST: adback_db_lite:3306
+      WORDPRESS_DB_PASSWORD: wordpress
+    links:
+    - adback_db_lite
+
+  adback_db_lite:
+    image: mysql:5.7
+    volumes:
+     - ./db_data:/var/lib/mysql
+    environment:
+     MYSQL_ROOT_PASSWORD: wordpress
+     MYSQL_DATABASE: wordpress
+     MYSQL_USER: wordpress
+     MYSQL_PASSWORD: wordpress
+    ports:
+     - "3309:3306"
+
