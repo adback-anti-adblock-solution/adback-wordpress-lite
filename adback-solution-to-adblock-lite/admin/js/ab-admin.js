@@ -38,7 +38,10 @@
     function registerAdback(event) {
         $('#ab-register-adback').prop('disabled', true);
         var callback = encodeURI(window.location.href);
-        window.location.href = 'https://www.adback.co/en/register/?redirect_url='
+        var local = $(event.target).data('local');
+        window.location.href = 'https://www.adback.co/'
+            + local
+            + '/register/?redirect_url='
             + callback
             + '&email=' + $(event.target).data('email')
             + '&website=' + $(event.target).data('site-url');
