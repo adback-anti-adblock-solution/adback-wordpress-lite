@@ -55,6 +55,7 @@
                             style="margin-top: 30px;"
                             data-site-url="<?php echo get_site_url(get_current_blog_id()) ?>"
                             data-email="<?php echo get_bloginfo('admin_email') ?>"
+                            data-local="<?php echo (get_locale() === 'fr_FR') ? 'fr':'en'; ?>"
                     >
                         <?php esc_html_e('Create my AdBack account', 'adback-solution-to-adblock-lite'); ?>
                     </button>
