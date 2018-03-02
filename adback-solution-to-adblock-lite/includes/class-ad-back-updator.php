@@ -101,7 +101,6 @@ class Ad_Back_Lite_Updator
 
         if (null !== $savedToken || '' !== $savedToken->access_token) {
             if (self::isRewriteRouteEnabled()) {
-                Ad_Back_Lite_Post::execute("https://www.adback.co/api/end-point/activate?access_token=" . $savedToken->access_token, array());
                 $endPointData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/end-point/me?access_token=" . $savedToken->access_token);
                 $endPoints = json_decode($endPointData, true);
 
@@ -126,6 +125,12 @@ class Ad_Back_Lite_Updator
 
             $fullScriptData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me/full?access_token=" . $savedToken->access_token);
             $fullScripts = json_decode($fullScriptData, true);
+
+            $genericScriptData = Ad_Back_Lite_Get::execute("https://www.adback.co/api/script/me/generic?access_token=" . $savedToken->access_token);
+            $genericScript = json_decode($genericScriptData, true);
+
+            $fullScripts['script_codes']['generic'] = $genericScript;
+
             $types = self::getTypes();
             if (is_array($fullScripts) && !empty($fullScripts) && array_key_exists('script_codes', $fullScripts)) {
                 foreach ($types as $key => $type) {
@@ -158,11 +163,8 @@ class Ad_Back_Lite_Updator
     {
         return array(
             'analytics',
-            'message',
-            'product',
-            'banner',
-            'catcher',
             'iab_banner',
+            'generic',
         );
     }
 }
