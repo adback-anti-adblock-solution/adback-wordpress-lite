@@ -53,6 +53,10 @@ class Ad_Back_Lite_Proxy
             $params = $matches['params'];
         }
 
+        if (strlen($params) == 0 && strlen($query) == 0 && preg_match('#^/[a-z]+(?<params>/.+)#', $_SERVER['REQUEST_URI'], $matches)) {
+            $params = $matches['params'];
+        }
+
         $_SERVER['HTTP_REFERER'] = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : $currentUrl;
 
         $method = $_SERVER['REQUEST_METHOD'];
