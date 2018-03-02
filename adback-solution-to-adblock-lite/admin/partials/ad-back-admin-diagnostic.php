@@ -64,6 +64,33 @@ $ko = "<svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://crea
                 </td>
                 <td class="working-script"><?php echo $ko; ?></td>
             </tr>
+            <tr>
+                <td>Endpoint / Old endpoint / Next endpoint</td>
+                <td>
+                    <?php echo $endPoints->end_point ?: 'x'; ?>
+                    <?php echo $endPoints->old_end_point ?: 'x'; ?>
+                    <?php echo $endPoints->next_end_point ?: 'x'; ?>
+                </td>
+                <td><?php echo (null !== $endPoints) ? $ok : $ko; ?></td>
+            </tr>
+        </table>
+
+        <h2>Rewrite rules <button onclick="jQuery('.ad-back-diagnostic-rules').toggle()">Show / Hide</button></h2>
+        <table class="ad-back-diagnostic-rules clear" style="overflow-x:auto; display: none">
+            <tr>
+                <th>Rule</th>
+                <th>Rewrite</th>
+                <th>AdBack?</th>
+            </tr>
+            <?php if (is_array($rules)) : ?>
+                <?php foreach ($rules as $rule => $rewrite) : ?>
+                    <tr>
+                        <td><?php echo $rule; ?></td>
+                        <td><?php echo $rewrite; ?></td>
+                        <td class="ad-back-rule-adback"><?php echo preg_match('/^('.($endPoints->old_end_point ?: '').'|'.($endPoints->end_point ?: '').'|'.($endPoints->next_end_point ?: '').')\/.*/', $rule) ? $ok : ''; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </table>
     </div>
 </div>
