@@ -217,31 +217,6 @@ class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
     }
 
     /**
-     * Render the settings page for this plugin.
-     *
-     * @since    1.0.0
-     */
-    public function displayPluginSettingsPage()
-    {
-        if ($this->isConnected()) {
-            if ($this->getDomain() == '') {
-                $this->askDomain();
-            }
-            include_once('partials/ad-back-admin-settings-display.php');
-        } else {
-            if (isset($_GET['access_token'])) {
-                $this->saveToken(array(
-                    'access_token' => $_GET['access_token'],
-                    'refresh_token' => '',
-                ));
-                include_once('partials/ad-back-admin-redirect.php');
-            } else {
-                include_once('partials/ad-back-admin-login-display.php');
-            }
-        }
-    }
-
-    /**
      * Render the message page for this plugin.
      *
      * @since    1.0.0
@@ -311,10 +286,9 @@ class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
          *
          */
 
-        add_menu_page('AdBack (Lite)', 'AdBack (Lite)', 'manage_options', 'ab-lite', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
+        add_menu_page('Adblock Monetization', 'Adblock Monetization', 'manage_options', 'ab-lite', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
 
         add_submenu_page('ab-lite', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite', array($this, 'displayPluginStatsPage'));
-        add_submenu_page('ab-lite', 'AdBack Settings', __('Settings', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite-settings', array($this, 'displayPluginSettingsPage'));
         add_submenu_page('ab-lite', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite-diagnostic', array($this, 'displayPluginDiagnosticPage'));
 
         add_plugins_page('ab-lite', '', 'manage_options', 'ab-lite-refresh-domain', array($this, 'displayPluginRefreshDomainPage'));
@@ -392,7 +366,7 @@ class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
             if (!$this->isConnected()) {
                 echo '<div class="updated" style="padding: 0; margin: 0; border: none; background: none;">
                         <div class="adback-incentive">
-                        <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings')) . '" method="POST">
+                        <form name="adback-incentive" action="' . esc_url(get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite')) . '" method="POST">
                         <div class="adback-incentive-button-container">
                             <div class="adback-incentive-button-border">
                                 <input type="submit" class="adback-incentive-button" value="' . __("Activate my AdBack plugin", 'adback-solution-to-adblock-lite') . '">

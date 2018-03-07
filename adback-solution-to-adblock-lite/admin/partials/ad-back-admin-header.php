@@ -1,5 +1,5 @@
 <div class="ab-top">
-    <p class="logo">AdBack solution to Adblock (Lite)</p>
+    <p class="logo">Adblock Monetization</p>
     <span class="slogan"><?PHP _e('by', 'adback-solution-to-adblock-lite');?> <a
                 href="https://www.adback.co">AdBack</a></span>
     <div class="ab-actions" style="padding-top: 10px;">

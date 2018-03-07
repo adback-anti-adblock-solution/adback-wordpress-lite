@@ -1,4 +1,4 @@
-=== AdBack solution to adblock (Lite) ===
+=== Adblock Monetization ===
 Contributors: getadback
 Donate link: https://www.adback.co
 Tags: adblock, analytics, message, detection, detect, block, ad block, ads, advertising, adblock killer, anti adblock, adblocker, popup, notification, message, custom, personalize, analyze, stats, adblocker, dashboard widget, block adblock, ghostery, ublock, adblock plus, ad free

@@ -129,14 +129,34 @@ SQL;
         }
 
         $table_name = $wpdb->prefix . 'adback_token';
-        $wpdb->update(
-            $table_name,
-            array(
-                "access_token" => $token["access_token"],
-                "refresh_token" => $token["refresh_token"]
-            ),
-            array("id" => get_current_blog_id())
-        );
+        $blogId = get_current_blog_id();
+        $savedToken = $wpdb->get_row("SELECT * FROM " . $table_name . " WHERE id = ".$blogId);
+
+        if (null === $savedToken) {
+            $sql = <<<SQL
+INSERT INTO $table_name
+  (id,access_token,refresh_token) values (%d,%s,%s)
+  ON DUPLICATE KEY UPDATE access_token = %s, refresh_token = %s;
+SQL;
+            $sql = $wpdb->prepare(
+                $sql,
+                $blogId,
+                $token["access_token"],
+                $token["refresh_token"],
+                $token["access_token"],
+                $token["refresh_token"]
+            );
+            $wpdb->query($sql);
+        } else {
+            $wpdb->update(
+                $table_name,
+                array(
+                    "access_token" => $token["access_token"],
+                    "refresh_token" => $token["refresh_token"]
+                ),
+                array("id" => $blogId)
+            );
+        }
 
         $this->notifyInstallation($token["access_token"]);
     }
