@@ -13,7 +13,7 @@
  * @package           Ad_Back_Lite
  *
  * @wordpress-plugin
- * Plugin Name:       AdBack solution to adblock (Lite)
+ * Plugin Name:       Adblock Monetization
  * Plugin URI:        adback.co
  * Description:       With AdBack, access analytics about adblocker users, address them personalized messages, propose alternative solutions to advertising (video, survey).
  * Version:           0.1.0
@@ -33,7 +33,6 @@ if ( ! defined( 'WPINC' ) ) {
 add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'ad_back_lite_action_links' );
 
 function ad_back_lite_action_links( $links ) {
-    $links[] = '<a href="'. esc_url( get_admin_url(get_current_blog_id(), 'admin.php?page=ab-lite-settings') ) .'">'.__('Settings').'</a>';
     return $links;
 }
 
