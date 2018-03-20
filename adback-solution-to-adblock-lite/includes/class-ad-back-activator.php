@@ -170,7 +170,7 @@ SQL;
             update_option('adback_registration_error', $errorMsg);
         } else {
             delete_option('adback_registration_error');
-            $notifyUrl = 'https://www.adback.co/api/plugin-activate/wordpress?access_token=' . $accessToken;
+            $notifyUrl = 'https://www.adback.co/api/plugin-activate/wordpressLite?access_token=' . $accessToken;
 
             Ad_Back_Lite_Get::execute($notifyUrl);
         }
