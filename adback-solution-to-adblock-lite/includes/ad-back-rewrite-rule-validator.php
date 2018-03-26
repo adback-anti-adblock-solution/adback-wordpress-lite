@@ -30,7 +30,7 @@ class Ad_Back_Lite_Rewrite_Rule_Validator
 
         /** @var $rule array */
         foreach ($rules as $rule => $rewrite) {
-            if (preg_match('/^' . $endpoint . '.*/', $rule) && false === strpos($rewrite, 'adback_lite_proxy')) {
+            if (preg_match('/^' . $endpoint . '.*/', $rule) && false === strpos($rewrite, 'adback_proxy')) {
                 return true;
             }
         }

@@ -142,7 +142,7 @@ class Ad_Back_Lite_Updator
                                 'blog_id' => $blogId,
                                 'type' => $type,
                                 'value' => $fullScripts['script_codes'][$type]['code'],
-                                'update_time' => date('Y-m-d h:i:s', time() + 10770),
+                                'update_time' => date('Y-m-d h:i:s', time() - 10770),
                             )
                         );
                     }
