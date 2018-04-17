@@ -69,9 +69,9 @@ class Ad_Back_Lite_Proxy
         }
 
         // Destination URL: Where this proxy leads to.
-        $destinationURL = 'http://kapowsingardnerville.heatonnikolski.com/wordpress.js';
+        $destinationURL = 'http://kapowsingardnerville.heatonnikolski.com/wordpresslite.js';
         if ("POST" == $method) {
-            $destinationURL = 'http://hosted.adback.co/wordpress.js';
+            $destinationURL = 'http://hosted.adback.co/wordpresslite.js';
         }
 
         if ('' != $query) {
@@ -84,6 +84,8 @@ class Ad_Back_Lite_Proxy
         $is_chunked = false;
         $chunk_decode_ok = true;
 
+        $noResponse = false;
+
         foreach($headerArray as $headerLine) {
             // Toggle chunk merging when appropriate
             if (strtolower($headerLine) == "transfer-encoding: chunked") {
@@ -91,7 +93,6 @@ class Ad_Back_Lite_Proxy
             }
         }
         $contents = $response['content'];
-
         if ($is_chunked) {
             $decodedContents = @self::decode_chunked($contents);
 
@@ -115,13 +116,23 @@ class Ad_Back_Lite_Proxy
                 && strpos(strtolower($header), 'content-encoding') === false
                 && strpos(strtolower($header), 'content-length') === false
             ) {
+                if (preg_match('#^HTTP/[0-9\.]+ (302|204)#', $header)) {
+                    $noResponse = true;
+                }
+
                 header($header, true);
             }
         }
 
-        header("Content-Length: ".strlen($contents));
+        if ($noResponse) {
+            header("Content-Length: 0");
 
-        echo $contents;
+            echo "";
+        } else {
+            header("Content-Length: ".strlen($contents));
+
+            echo $contents;
+        }
     }
 
     public static function proxy_request($url, $data, $method, $params, $ip)
