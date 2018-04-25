@@ -95,6 +95,15 @@ function adback_lite_plugin_rules() {
             add_rewrite_rule($endPoints->next_end_point . '/?(.*)', 'index.php?pagename=adback_proxy&adback_request=$matches[1]', 'top');
         }
     }
+
+    $table_name_token = $wpdb->prefix . 'adback_token';
+    $token = $wpdb->get_row("SELECT * FROM " . $table_name_token . " WHERE id = ".get_current_blog_id());
+
+    if (is_array($token)) {
+        $token = (object)$token;
+    }
+
+    add_rewrite_rule($token->access_token.'/update', 'index.php?pagename=adback_update', 'top');
 }
 
 function adback_lite_plugin_query_vars($vars) {
@@ -104,11 +113,21 @@ function adback_lite_plugin_query_vars($vars) {
 }
 
 function adback_lite_plugin_display() {
-    $adback_proxy_page = get_query_var('pagename');
-    if ('adback_proxy' == $adback_proxy_page):
+    $adback_page_name = get_query_var('pagename');
+    if ('adback_proxy' == $adback_page_name):
         require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-proxy.php';
         $adback_request = get_query_var('adback_request');
         Ad_Back_Lite_Proxy::execute($adback_request);
+        exit;
+    endif;
+    if ('adback_update' == $adback_page_name):
+        global $wpdb;
+
+        $table_name = $wpdb->prefix . 'adback_full_tag';
+        $blogId = get_current_blog_id();
+        $wpdb->query('DELETE FROM ' . $table_name . " WHERE blog_id = ". $blogId);
+
+        echo "Refreshed";
         exit;
     endif;
 }
