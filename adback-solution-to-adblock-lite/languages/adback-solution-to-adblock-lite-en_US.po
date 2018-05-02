@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adback-solution-to-adblock-lite\n"
-"POT-Creation-Date: 2018-02-07 17:47+0100\n"
+"POT-Creation-Date: 2018-05-02 17:58+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,15 +9,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: ad-back.php:36 admin/class-ad-back-admin.php:317
-msgid "Settings"
-msgstr "Settings"
 
 #: admin/class-ad-back-admin.php:111
 msgid "Bounce rate of adblocker users"
@@ -112,19 +108,19 @@ msgstr "Something went wrong"
 msgid "You must be log in to see stats. Go to <a href=\"%s\">Log in page</a>"
 msgstr "You must be log in to see stats. Go to <a href=\"%s\">login page</a>"
 
-#: admin/class-ad-back-admin.php:316
+#: admin/class-ad-back-admin.php:291
 msgid "Statistics"
 msgstr "Statistics"
 
-#: admin/class-ad-back-admin.php:318
+#: admin/class-ad-back-admin.php:292
 msgid "Diagnostic"
 msgstr "Diagnostic"
 
-#: admin/class-ad-back-admin.php:398
+#: admin/class-ad-back-admin.php:372
 msgid "Activate my AdBack plugin"
 msgstr "Activate my AdBack plugin"
 
-#: admin/class-ad-back-admin.php:402
+#: admin/class-ad-back-admin.php:376
 msgid "It's time to analyze your adblock users, set up your AdBack account!"
 msgstr "It's time to analyze your adblock users, set up your AdBack account!"
 
@@ -207,11 +203,11 @@ msgstr "Detailed statistics directly on your WordPress and AdBack interface"
 msgid "Unique and user-friendly monetization solutions"
 msgstr "Unique and user-friendly monetization solutions"
 
-#: admin/partials/ad-back-admin-login-display.php:59
+#: admin/partials/ad-back-admin-login-display.php:60
 msgid "Create my AdBack account"
 msgstr "Create my AdBack account"
 
-#: admin/partials/ad-back-admin-login-display.php:64
+#: admin/partials/ad-back-admin-login-display.php:65
 msgid "Log in"
 msgstr "Log in"
 
@@ -222,22 +218,6 @@ msgstr "Checking credentials..."
 #: admin/partials/ad-back-admin-refresh-domain.php:16
 msgid "Refresh domain..."
 msgstr "Refresh domain..."
-
-#: admin/partials/ad-back-admin-settings-display.php:24
-msgid "Get more statistics"
-msgstr "Get more statistics"
-
-#: admin/partials/ad-back-admin-settings-display.php:28
-msgid "Redirect me to my AdBack dashboard"
-msgstr "Redirect me to my AdBack dashboard"
-
-#: admin/partials/ad-back-admin-settings-display.php:32
-msgid "Adback Account"
-msgstr "Adback Account"
-
-#: admin/partials/ad-back-admin-settings-display.php:36
-msgid "Log out"
-msgstr "Log out"
 
 #: includes/class-ad-back-activator.php:166
 msgid "Registration error"
@@ -267,17 +247,102 @@ msgstr ""
 "uncheck the box \"iframes and videos\" in Settings > LazyLoad to continue "
 "using AdBack. This change won't interfere with the operation of your website."
 
+#: public/class-ad-back-public.php:85
+msgid "To access the website"
+msgstr "To access the website"
+
+#: public/class-ad-back-public.php:86
+msgid "Deactivate your adblock<br/>then reload the page."
+msgstr "Deactivate your adblock<br/>then reload the page."
+
+#: public/class-ad-back-public.php:87
+msgid "Or click on the banner<br/>nearby"
+msgstr "Or click on the banner<br/>nearby →"
+
+#: public/class-ad-back-public.php:88
+msgid "Close"
+msgstr "Close"
+
+#: public/class-ad-back-public.php:89
+msgid "Why do I see this message ?"
+msgstr "Why do I see this message ?"
+
+#: public/class-ad-back-public.php:90
+msgid ""
+"Your browser blocks the ads on this website. To discover how to access it, "
+"find the help down here."
+msgstr ""
+"Your browser blocks the ads on this website. To discover how to access it, "
+"find the help down here."
+
+#: public/class-ad-back-public.php:91
+#, fuzzy
+msgid "Access help page"
+msgstr "Access help page"
+
+#: public/class-ad-back-public.php:92
+msgid "An issue ?"
+msgstr "An issue ?"
+
+#: public/class-ad-back-public.php:93
+msgid ""
+"If you have clicked on the banner or deactivate your adblock and you still "
+"see this message, report it to us below."
+msgstr ""
+"If you have clicked on the banner or deactivate your adblock and you still "
+"see this message, report it to us below."
+
+#: public/class-ad-back-public.php:94
+msgid "Report a bug"
+msgstr "Report a bug"
+
+#: public/class-ad-back-public.php:95
+msgid "Verification in progress"
+msgstr "Verification in progress"
+
+#: public/class-ad-back-public.php:96
+msgid "Thank you for your help"
+msgstr "Thank you for your help"
+
+#: public/class-ad-back-public.php:97
+msgid "Who are we ?"
+msgstr "Who are we ?"
+
 #: public/class-ad-back-public.php:98
-msgid "Click the ad"
-msgstr "Click the ad"
+msgid ""
+"Thanks to AdBack, you can monetize your adblocked audience by displaying "
+"users friendly banners."
+msgstr ""
+"Thanks to AdBack, you can monetize your adblocked audience by displaying "
+"users friendly banners."
 
 #: public/class-ad-back-public.php:99
-msgid "Disable your adblocker and reload the page to access this website"
-msgstr "Disable your adblocker and reload the page to access this website"
+msgid "Discover AdBack"
+msgstr "Discover AdBack"
 
-#: public/class-ad-back-public.php:100
-msgid "Access this website without ads"
-msgstr "Access this website without ads"
+#~ msgid "Settings"
+#~ msgstr "Settings"
+
+#~ msgid "Get more statistics"
+#~ msgstr "Get more statistics"
+
+#~ msgid "Redirect me to my AdBack dashboard"
+#~ msgstr "Redirect me to my AdBack dashboard"
+
+#~ msgid "Adback Account"
+#~ msgstr "Adback Account"
+
+#~ msgid "Log out"
+#~ msgstr "Log out"
+
+#~ msgid "Click the ad"
+#~ msgstr "Click the ad"
+
+#~ msgid "Disable your adblocker and reload the page to access this website"
+#~ msgstr "Disable your adblocker and reload the page to access this website"
+
+#~ msgid "Access this website without ads"
+#~ msgstr "Access this website without ads"
 
 #~ msgid "Message"
 #~ msgstr "Message"

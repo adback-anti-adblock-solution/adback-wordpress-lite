@@ -14,11 +14,6 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ad-back.php:36 admin/class-ad-back-admin.php:367
-#: admin/class-ad-back-admin.php:440
-msgid "Settings"
-msgstr ""
-
 #: admin/class-ad-back-admin.php:111
 msgid "Bounce rate of adblocker users"
 msgstr ""
@@ -107,29 +102,25 @@ msgstr ""
 msgid "Something went wrong"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:188
+#: admin/class-ad-back-admin.php:190
 #, php-format
 msgid "You must be log in to see stats. Go to <a href=\"%s\">Log in page</a>"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:364
+#: admin/class-ad-back-admin.php:291
 msgid "Statistics"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:365
-msgid "Message"
-msgstr ""
-
-#: admin/class-ad-back-admin.php:366
-msgid "Placements"
-msgstr ""
-
-#: admin/class-ad-back-admin.php:368
+#: admin/class-ad-back-admin.php:292
 msgid "Diagnostic"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:440
-msgid "It's time to analyze your adblock users, activate your adback account !"
+#: admin/class-ad-back-admin.php:372
+msgid "Activate my AdBack plugin"
+msgstr ""
+
+#: admin/class-ad-back-admin.php:376
+msgid "It's time to analyze your adblock users, set up your AdBack account!"
 msgstr ""
 
 #: admin/partials/ad-back-admin-diagnostic.php:17
@@ -179,4 +170,64 @@ msgstr ""
 
 #: includes/class-ad-back-external-checker.php:46
 msgid "There is an incompatibility between the LazyLoad plugin and AdBack. Please uncheck the box \"iframes and videos\" in Settings > LazyLoad to continue using AdBack. This change won't interfere with the operation of your website."
+msgstr ""
+
+#: public/class-ad-back-public.php:85
+msgid "To access the website"
+msgstr ""
+
+#: public/class-ad-back-public.php:86
+msgid "Deactivate your adblock<br/>then reload the page."
+msgstr ""
+
+#: public/class-ad-back-public.php:87
+msgid "Or click on the banner<br/>nearby"
+msgstr ""
+
+#: public/class-ad-back-public.php:88
+msgid "Close"
+msgstr ""
+
+#: public/class-ad-back-public.php:89
+msgid "Why do I see this message ?"
+msgstr ""
+
+#: public/class-ad-back-public.php:90
+msgid "Your browser blocks the ads on this website. To discover how to access it, find the help down here."
+msgstr ""
+
+#: public/class-ad-back-public.php:91
+msgid "Access help page"
+msgstr ""
+
+#: public/class-ad-back-public.php:92
+msgid "An issue ?"
+msgstr ""
+
+#: public/class-ad-back-public.php:93
+msgid "If you have clicked on the banner or deactivate your adblock and you still see this message, report it to us below."
+msgstr ""
+
+#: public/class-ad-back-public.php:94
+msgid "Report a bug"
+msgstr ""
+
+#: public/class-ad-back-public.php:95
+msgid "Verification in progress"
+msgstr ""
+
+#: public/class-ad-back-public.php:96
+msgid "Thank you for your help"
+msgstr ""
+
+#: public/class-ad-back-public.php:97
+msgid "Who are we ?"
+msgstr ""
+
+#: public/class-ad-back-public.php:98
+msgid "Thanks to AdBack, you can monetize your adblocked audience by displaying users friendly banners."
+msgstr ""
+
+#: public/class-ad-back-public.php:99
+msgid "Discover AdBack"
 msgstr ""
