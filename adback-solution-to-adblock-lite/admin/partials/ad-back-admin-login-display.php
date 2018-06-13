@@ -20,7 +20,7 @@
             <div class="ab-login-box">
                 <center><a href="https://www.adback.co" target="_blank"><div class="ab-login-logo" style="background-image:url('<?php echo plugin_dir_url( __FILE__ ); ?>images/_dback.png');"></div></a></center>
                 <center>
-                    <?php if (get_option('adback_registration_error', false) != 'adback_oauth.registration.existing_user') { ?>
+                    <?php if (get_option('adback_registration_error', false) == 'adback_oauth.registration.existing_user') { ?>
                         <span class="ab-registration-error">
                             <?php esc_html_e('You already have an AdBack account. Connect to your account by clicking on the "Log in" link below the button :', 'adback-solution-to-adblock-lite'); ?>
                         </span>
