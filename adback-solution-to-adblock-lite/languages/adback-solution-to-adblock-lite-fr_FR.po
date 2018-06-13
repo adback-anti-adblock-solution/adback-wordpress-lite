@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adback-solution-to-adblock-lite\n"
-"POT-Creation-Date: 2018-05-02 17:54+0200\n"
+"POT-Creation-Date: 2018-06-13 16:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,6 +12,8 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr;esc_html_e;esc_attr_e\n"
 "X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/class-ad-back-admin.php:111
@@ -185,7 +187,7 @@ msgid "Why create an AdBack account ?"
 msgstr "Pourquoi créer un compte AdBack ?"
 
 #: admin/partials/ad-back-admin-login-display.php:33
-#: admin/partials/ad-back-admin-login-display.php:42
+#: admin/partials/ad-back-admin-login-display.php:53
 msgid ""
 "AdBack is an analytics and monetization tool of your adblock audience. It is "
 "100&#37; free and without obligation. By authorizing AdBack, you will access:"
@@ -194,30 +196,82 @@ msgstr ""
 "gratuit et sans engagement. En autorisant AdBack, vous accédez à :"
 
 #: admin/partials/ad-back-admin-login-display.php:35
-#: admin/partials/ad-back-admin-login-display.php:44
+#: admin/partials/ad-back-admin-login-display.php:55
 msgid "A unique and unblockable technology"
 msgstr "Une technologie unique et imblocable par les adblockers"
 
 #: admin/partials/ad-back-admin-login-display.php:36
-#: admin/partials/ad-back-admin-login-display.php:45
+#: admin/partials/ad-back-admin-login-display.php:56
 msgid "Detailed statistics directly on your WordPress and AdBack interface"
 msgstr ""
 "Des statistiques détaillées directement sur votre WordPress et sur votre "
 "interface AdBack"
 
 #: admin/partials/ad-back-admin-login-display.php:37
-#: admin/partials/ad-back-admin-login-display.php:46
+#: admin/partials/ad-back-admin-login-display.php:57
 msgid "Unique and user-friendly monetization solutions"
 msgstr ""
 "Des solutions de monétisation uniques et respectueuses des utilisateurs"
 
-#: admin/partials/ad-back-admin-login-display.php:60
+#: admin/partials/ad-back-admin-login-display.php:41
+#: admin/partials/ad-back-admin-login-display.php:61
+msgid "By activating the plugin:"
+msgstr "En activant ce plugin :"
+
+#: admin/partials/ad-back-admin-login-display.php:43
+#: admin/partials/ad-back-admin-login-display.php:63
+msgid "You accept the AdBack Terms of Service"
+msgstr "Vous acceptez les conditions générales d’utilisation d’AdBack"
+
+#: admin/partials/ad-back-admin-login-display.php:44
+#: admin/partials/ad-back-admin-login-display.php:64
+msgid ""
+"The application will collect automatically the name of your website and the "
+"associated email address.<br>&ensp; That address will be used to give you "
+"the information related to your account and to the AdBack news and products"
+msgstr ""
+"L’application collectera automatiquement le nom de votre site et l’adresse "
+"mail associée à votre compte WordPress.<br>&ensp; Cette adresse sera "
+"utilisée pour vous communiquer les informations relatives à votre compte "
+"créé à l’activation et toute information relative au produit et nouveautés "
+"AdBack"
+
+#: admin/partials/ad-back-admin-login-display.php:45
+#: admin/partials/ad-back-admin-login-display.php:65
+msgid ""
+"The application will install the AdBack script, necessary to display the "
+"analytics and monetization solutions"
+msgstr ""
+"L’application installera sur votre site le script AdBack nécessaire à "
+"l’analyse et à l’affichage des solutions de monétisation"
+
+#: admin/partials/ad-back-admin-login-display.php:48
+#: admin/partials/ad-back-admin-login-display.php:68
+msgid ""
+"<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
+msgstr ""
+"<a href=\"https://landing.adback.co/mentions-legales/\">Conditions générales "
+"d’utilisation</a>"
+
+#: admin/partials/ad-back-admin-login-display.php:48
+#: admin/partials/ad-back-admin-login-display.php:68
+msgid ""
+"<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
+msgstr ""
+"<a href=\"https://landing.adback.co/politique-de-confidentialite/"
+"\">Politique de confidentialité</a>"
+
+#: admin/partials/ad-back-admin-login-display.php:82
 msgid "Create my AdBack account"
 msgstr "Créer mon compte AdBack"
 
-#: admin/partials/ad-back-admin-login-display.php:65
+#: admin/partials/ad-back-admin-login-display.php:87
 msgid "Log in"
 msgstr "Connexion"
+
+#: admin/partials/ad-back-admin-login-display.php:91
+msgid "Refuse (you won’t be able to use AdBack solutions)"
+msgstr "Refuser (vous ne pourrez pas utiliser la solution AdBack)"
 
 #: admin/partials/ad-back-admin-redirect.php:16
 msgid "Checking credentials..."

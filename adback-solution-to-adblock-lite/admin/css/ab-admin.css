@@ -548,3 +548,9 @@ a.button.button-ab {
     color: #FFF;
     font-weight: normal;
 }
+
+.ab-refuse-adback {
+    width: 100%;
+    margin-top: 30px;
+    color: #d00303bd;
+}

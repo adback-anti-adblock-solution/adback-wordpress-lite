@@ -12,6 +12,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-KeywordsList: __;_e;_esc_attr\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/class-ad-back-admin.php:111
@@ -150,6 +151,21 @@ msgstr ""
 
 #: admin/partials/ad-back-admin-login-display.php:16
 msgid "AdBack"
+msgstr ""
+
+#: admin/partials/ad-back-admin-login-display.php:44
+#: admin/partials/ad-back-admin-login-display.php:64
+msgid "The application will collect automatically the name of your website and the associated email address.<br>&ensp; That address will be used to give you the information related to your account and to the AdBack news and products"
+msgstr ""
+
+#: admin/partials/ad-back-admin-login-display.php:48
+#: admin/partials/ad-back-admin-login-display.php:68
+msgid "<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
+msgstr ""
+
+#: admin/partials/ad-back-admin-login-display.php:48
+#: admin/partials/ad-back-admin-login-display.php:68
+msgid "<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
 msgstr ""
 
 #: admin/partials/ad-back-admin-redirect.php:16
