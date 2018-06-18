@@ -9,6 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Monetize your website in 1 click and benefit from:
+
 * statistics about your adblocker users
 * message display offering alternatives
 * monetization of all your visits
@@ -28,6 +29,7 @@ Display a footer message offering your users the possibility to turn off their a
 In any case, you monetize your site thanks to the adblocker deactivation (ads on your website are displayed again) or with the click on the ad. Monetization and performance guaranteed!
 
 Access the dashboard with simple statistics:
+
 * Revenues
 * Number of click on the ad
 * Number of message display
