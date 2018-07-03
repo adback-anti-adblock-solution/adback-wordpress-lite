@@ -13,7 +13,7 @@
  * @package           Ad_Back_Lite
  *
  * @wordpress-plugin
- * Plugin Name:       Adblock Monetization
+ * Plugin Name:       One Click Adblock Monetization
  * Plugin URI:        adback.co
  * Description:       With AdBack, access analytics about adblocker users, address them personalized messages, propose alternative solutions to advertising (video, survey).
  * Version:           1.0.0

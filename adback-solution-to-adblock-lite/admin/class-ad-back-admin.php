@@ -286,7 +286,7 @@ class Ad_Back_Lite_Admin extends Ad_Back_Lite_Generic
          *
          */
 
-        add_menu_page('Adblock Monetization', 'Adblock Monetization', 'manage_options', 'ab-lite', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
+        add_menu_page('One Click Adblock Monetization', 'One Click Adblock Monetization', 'manage_options', 'ab-lite', '', plugin_dir_url(__FILE__) . '/partials/images/_dback_blanc_logo.png', $_wp_last_object_menu);
 
         add_submenu_page('ab-lite', 'AdBack Statistiques', __('Statistics', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite', array($this, 'displayPluginStatsPage'));
         add_submenu_page('ab-lite', 'AdBack Diagnostic', __('Diagnostic', 'adback-solution-to-adblock-lite'), 'manage_options', 'ab-lite-diagnostic', array($this, 'displayPluginDiagnosticPage'));

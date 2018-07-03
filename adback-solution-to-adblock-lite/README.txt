@@ -1,4 +1,4 @@
-=== Adblock Monetization ===
+=== One Click Adblock Monetization ===
 Contributors: getadback
 Donate link: https://www.adback.co
 Tags: adblock, audience, adblocker, monetisation, monetization, adblock notify, adback
@@ -20,7 +20,7 @@ Monetize your website in 1 click and benefit from:
 
 ## What is it?
 
-The plugin Adblock monetization by AdBack lets you monetize the part of your audience unreachable with your classic monetization tools: the adblock users. This plugin offers a solution only for this target. Your normal ads will be shown to the rest of your audience.
+The plugin One Click Adblock Monetization by AdBack lets you monetize the part of your audience unreachable with your classic monetization tools: the adblock users. This plugin offers a solution only for this target. Your normal ads will be shown to the rest of your audience.
 
 ## How does it work?
 
