@@ -8,15 +8,21 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Monetize your website in 1 click and benefit from:
+
+== Description ==
+
+## Is this plugin adapted to my website ?
+
+This plugin is dedicated to websites with less than 50 000 daily pages views who want to quickly and easily monetize their adblock audience.
+For advanced users who have a site with more than 50 000 daily pages views, please use our plugin [AdBack solution to adblock](https://fr.wordpress.org/plugins/adback-solution-to-adblock/).
+
+## Monetize your website in 1 click and benefit from:
 
 * statistics about your adblocker users
 * message display offering alternatives
 * monetization of all your visits
 * strong and 100% unblockable technology
 * GDPR compliant solution
-
-== Description ==
 
 ## What is it?
 

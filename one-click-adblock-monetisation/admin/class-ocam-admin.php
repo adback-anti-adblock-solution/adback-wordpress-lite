@@ -66,8 +66,6 @@ class Ocam_Admin extends Ocam_Generic
             return;
         }
 
-        wp_enqueue_style('vex-css', plugin_dir_url(__FILE__) . 'css/vex.css', array(), $this->version, 'all');
-        wp_enqueue_style('vex-theme-css', plugin_dir_url(__FILE__) . 'css/vex-theme-default.css', array(), $this->version, 'all');
         wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/ocam-theme.css', array(), $this->version, 'all');
     }
 
@@ -127,7 +125,6 @@ class Ocam_Admin extends Ocam_Generic
             wp_enqueue_script('adback', 'https://' . $this->getDomain() . '/lib/ab.min.js', array(), $this->version, true);
         }
 
-        wp_enqueue_script('vex-js', plugin_dir_url(__FILE__) . 'js/vex.combined.min.js', array(), $this->version, true);
         wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/ocam.js', array('jquery'), $this->version, true);
         wp_localize_script($this->plugin_name, 'trans_arr', $translation_array);
     }
