@@ -1,0 +1,626 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: one-click-adblock-monetisation\n"
+"POT-Creation-Date: 2018-06-13 16:15+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr;esc_html_e;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-ocam-admin.php:111
+msgid "Bounce rate of adblocker users"
+msgstr "Bounce rate of adblocker users"
+
+#: admin/class-ocam-admin.php:112
+msgid "Adblocker activation / deactivation"
+msgstr "Adblocker activation / deactivation"
+
+#: admin/class-ocam-admin.php:113
+msgid "Ad blocker percent"
+msgstr "Adblocker users rate"
+
+#: admin/class-ocam-admin.php:114
+msgid "Blocked page views"
+msgstr "Blocked page views"
+
+#: admin/class-ocam-admin.php:115
+msgid "Browser"
+msgstr "Browsers used by adblocker users"
+
+#: admin/class-ocam-admin.php:116
+msgid "OS"
+msgstr "Operating systems used by adblocker users"
+
+#: admin/class-ocam-admin.php:117
+msgid "Percent adblock users"
+msgstr "Adblocker users rate"
+
+#: admin/class-ocam-admin.php:118
+msgid "Percent bounce adblock users"
+msgstr "Bounce rate of adblocker users"
+
+#: admin/class-ocam-admin.php:119
+msgid "Percent bounce all users"
+msgstr "Global bounce rate"
+
+#: admin/class-ocam-admin.php:120
+msgid "Oops..."
+msgstr "Oops..."
+
+#: admin/class-ocam-admin.php:121
+msgid "Invalid email or password"
+msgstr "Invalid email or password"
+
+#: admin/class-ocam-admin.php:122
+msgid "The key, email and domain fields should be filled"
+msgstr "The key, email and domain fields should be filled"
+
+#: admin/class-ocam-admin.php:123
+msgid "The email and password fields should be filled"
+msgstr "The email and password fields should be filled"
+
+#: admin/class-ocam-admin.php:124
+msgid "There is an error in the registration: {0}"
+msgstr "There is an error in the registration: {0}"
+
+#: admin/class-ocam-admin.php:125
+msgid "Users having ad blocker"
+msgstr "Users that activated an adblocker"
+
+#: admin/class-ocam-admin.php:126
+msgid "Users who have disabled an ad blocker"
+msgstr "Users who have disabled an adblocker"
+
+#: admin/class-ocam-admin.php:127
+msgid "Percent page view with AdBlock"
+msgstr "Proportion of page views with an adblocker"
+
+#: admin/class-ocam-admin.php:128
+msgid "Percent page view"
+msgstr "Proportion of page views without adblocker"
+
+#: admin/class-ocam-admin.php:129
+msgid "days"
+msgstr "days"
+
+#: admin/class-ocam-admin.php:130
+msgid "Loading ..."
+msgstr "Loading..."
+
+#: admin/class-ocam-admin.php:131
+msgid "No Data"
+msgstr "No Data"
+
+#: admin/class-ocam-admin.php:132
+msgid "Something went wrong"
+msgstr "Something went wrong"
+
+#: admin/class-ocam-admin.php:190
+#, php-format
+msgid "You must be log in to see stats. Go to <a href=\"%s\">Log in page</a>"
+msgstr ""
+"You must be logged to see the statistics. Go to the <a href=\"%s\">login "
+"page</a>"
+
+#: admin/class-ocam-admin.php:291
+msgid "Statistics"
+msgstr "Statistics"
+
+#: admin/class-ocam-admin.php:292
+msgid "Diagnostic"
+msgstr "Diagnostic"
+
+#: admin/class-ocam-admin.php:372
+msgid "Activate my AdBack plugin"
+msgstr "Activate my AdBack plugin"
+
+#: admin/class-ocam-admin.php:376
+msgid "It's time to analyze your adblock users, set up your AdBack account!"
+msgstr "It's time to analyze your adblocker users, set up your AdBack account!"
+
+#: admin/partials/ocam-diagnostic.php:17
+msgid "AdBack : The stats of your AdBlock audience"
+msgstr "AdBack: The statistics of your adblocked audience"
+
+#: admin/partials/ocam-diagnostic.php:20
+msgid "Statistics description"
+msgstr ""
+"Use AdBack to understand your adblocked audience, to engage them with "
+"customized messages and to propose alternative solutions to advertising.<br /"
+">Find below your key figures and discover all the detailed data about your "
+"audience <a href=\"https://www.adback.co/en/sites/dashboard\">here, on your "
+"dashboard.</a><br />Check out the “Message” tab to activate and customize "
+"your message"
+
+#: admin/partials/ocam-display.php:36
+#, php-format
+msgid "No data available, please <a href=\"%s\">refresh domain</a>"
+msgstr "No data available, please <a href=\"%s\">refresh the domain</a>"
+
+#: admin/partials/ocam-header.php:3
+msgid "by"
+msgstr "by"
+
+#: admin/partials/ocam-header.php:8
+msgid "Tweet about it"
+msgstr "Tweet about it"
+
+#: admin/partials/ocam-header.php:11
+msgid "Leave a review"
+msgstr "Leave a review"
+
+#: admin/partials/ocam-login-display.php:16
+msgid "AdBack"
+msgstr "AdBack"
+
+#: admin/partials/ocam-login-display.php:25
+msgid ""
+"You already have an AdBack account. Connect to your account by clicking on "
+"the \"Log in\" link below the button :"
+msgstr ""
+"You already have an AdBack account. Connect to your account by clicking on "
+"the \"Log in\" link below the button:"
+
+#: admin/partials/ocam-login-display.php:29
+msgid ""
+"An error occured during your registration. Click on the \"Create my AdBack "
+"account\" button to try again."
+msgstr ""
+"An error occured during your registration. Click on the « Create my AdBack "
+"account » button to try again."
+
+#: admin/partials/ocam-login-display.php:32
+msgid "Why create an AdBack account ?"
+msgstr "Why create an AdBack account?"
+
+#: admin/partials/ocam-login-display.php:33
+#: admin/partials/ocam-login-display.php:53
+msgid ""
+"AdBack is an analytics and monetization tool of your adblock audience. It is "
+"100&#37; free and without obligation. By authorizing AdBack, you will access:"
+msgstr ""
+"AdBack is an analytics and monetization tool of your adblock audience. It is "
+"100&#37; free and without obligation. By authorizing AdBack, you will access:"
+
+#: admin/partials/ocam-login-display.php:35
+#: admin/partials/ocam-login-display.php:55
+msgid "A unique and unblockable technology"
+msgstr "A unique and unblockable technology"
+
+#: admin/partials/ocam-login-display.php:36
+#: admin/partials/ocam-login-display.php:56
+msgid "Detailed statistics directly on your WordPress and AdBack interface"
+msgstr "Detailed statistics directly on your WordPress and AdBack interface"
+
+#: admin/partials/ocam-login-display.php:37
+#: admin/partials/ocam-login-display.php:57
+msgid "Unique and user-friendly monetization solutions"
+msgstr "Unique and user-friendly monetization solutions"
+
+#: admin/partials/ocam-login-display.php:41
+#: admin/partials/ocam-login-display.php:61
+msgid "By activating the plugin:"
+msgstr "By activating the plugin:"
+
+#: admin/partials/ocam-login-display.php:43
+#: admin/partials/ocam-login-display.php:63
+msgid "You accept the AdBack Terms of Service"
+msgstr "You accept the AdBack Terms of Service"
+
+#: admin/partials/ocam-login-display.php:44
+#: admin/partials/ocam-login-display.php:64
+msgid ""
+"The application will collect automatically the name of your website and the "
+"associated email address.<br>&ensp; That address will be used to give you "
+"the information related to your account and to the AdBack news and products"
+msgstr ""
+"The application will collect automatically the name of your website and the "
+"associated email address.<br>&ensp; That address will be used to give you "
+"the information related to your account and to the AdBack news and products"
+
+#: admin/partials/ocam-login-display.php:45
+#: admin/partials/ocam-login-display.php:65
+msgid ""
+"The application will install the AdBack script, necessary to display the "
+"analytics and monetization solutions"
+msgstr ""
+"The application will install the AdBack script, necessary to display the "
+"analytics and monetization solutions"
+
+#: admin/partials/ocam-login-display.php:48
+#: admin/partials/ocam-login-display.php:68
+msgid ""
+"<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
+msgstr ""
+"<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
+
+#: admin/partials/ocam-login-display.php:48
+#: admin/partials/ocam-login-display.php:68
+msgid ""
+"<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
+msgstr ""
+"<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
+
+#: admin/partials/ocam-login-display.php:82
+msgid "Create my AdBack account"
+msgstr "Create my AdBack account"
+
+#: admin/partials/ocam-login-display.php:87
+msgid "Log in"
+msgstr "Log in"
+
+#: admin/partials/ocam-login-display.php:91
+msgid "Refuse (you won’t be able to use AdBack solutions)"
+msgstr "Refuse (you won’t be able to use AdBack solutions)"
+
+#: admin/partials/ocam-redirect.php:16
+msgid "Checking credentials..."
+msgstr "Checking credentials..."
+
+#: admin/partials/ocam-refresh-domain.php:16
+msgid "Refresh domain..."
+msgstr "Refresh domain..."
+
+#: includes/class-ocam-activator.php:166
+msgid "Registration error"
+msgstr ""
+"An error occurred during your AdBack plugin activation. Please go to the <a "
+"href='%s'>administration</a> page to complete your installation"
+
+#: includes/class-ocam-external-checker.php:38
+msgid ""
+"There is an incompatibility between the WP Rocket plugin and AdBack. Please "
+"uncheck the box \"Enable for iframes and videos\" in Settings > WP Rocket > "
+"Basic > LazyLoad to continue using AdBack. This change won't interfere with "
+"the operation of your website."
+msgstr ""
+"There is an incompatibility between the WP Rocket plugin and AdBack. Please "
+"uncheck the box \"Enable for iframes and videos\" in Settings > WP Rocket > "
+"Basic > LazyLoad to continue using AdBack. This change won't interfere with "
+"the operation of your website."
+
+#: includes/class-ocam-external-checker.php:46
+msgid ""
+"There is an incompatibility between the LazyLoad plugin and AdBack. Please "
+"uncheck the box \"iframes and videos\" in Settings > LazyLoad to continue "
+"using AdBack. This change won't interfere with the operation of your website."
+msgstr ""
+"There is an incompatibility between the LazyLoad plugin and AdBack. Please "
+"uncheck the box \"iframes and videos\" in Settings > LazyLoad to continue "
+"using AdBack. This change won't interfere with the operation of your website."
+
+#: public/class-ocam-public.php:85
+msgid "To access the website"
+msgstr "To access the website"
+
+#: public/class-ocam-public.php:86
+msgid "Deactivate your adblock<br/>then reload the page."
+msgstr "Turn off your adblocker<br/>and reload the page."
+
+#: public/class-ocam-public.php:87
+msgid "Or click on the banner<br/>nearby"
+msgstr "Or click on the ad<br/>right here →"
+
+#: public/class-ocam-public.php:88
+msgid "Close"
+msgstr "Close"
+
+#: public/class-ocam-public.php:89
+msgid "Why do I see this message ?"
+msgstr "Why this message?"
+
+#: public/class-ocam-public.php:90
+msgid ""
+"Your browser blocks the ads on this website. To discover how to access it, "
+"find the help down here."
+msgstr ""
+"Your browser is blocking ads on this website. To discover how to access it, "
+"find the help just below."
+
+#: public/class-ocam-public.php:91
+msgid "Access help page"
+msgstr "Access to help"
+
+#: public/class-ocam-public.php:92
+msgid "An issue ?"
+msgstr "Problem?"
+
+#: public/class-ad-back-public.php:93
+msgid ""
+"If you have clicked on the banner or deactivate your adblock and you still "
+"see this message, report it to us below."
+msgstr ""
+"If you clicked on the ad or deactivated your adblocker and still see this "
+"message, report the problem below."
+
+#: public/class-ad-back-public.php:94
+msgid "Report a bug"
+msgstr "Report a bug"
+
+#: public/class-ad-back-public.php:95
+msgid "Verification in progress"
+msgstr "Verification in progress"
+
+#: public/class-ad-back-public.php:96
+msgid "Thank you for your help"
+msgstr "Thank you for your help"
+
+#: public/class-ad-back-public.php:97
+msgid "Who are we ?"
+msgstr "Who are we?"
+
+#: public/class-ad-back-public.php:98
+msgid ""
+"Thanks to AdBack, you can monetize your adblocked audience by displaying "
+"users friendly banners."
+msgstr ""
+"With AdBack, monetize your adblocked audience by displaying ads that respect "
+"user’s experience."
+
+#: public/class-ad-back-public.php:99
+msgid "Discover AdBack"
+msgstr "Discover AdBack"
+
+#~ msgid "Settings"
+#~ msgstr "Settings"
+
+#~ msgid "Get more statistics"
+#~ msgstr "Get more statistics"
+
+#~ msgid "Redirect me to my AdBack dashboard"
+#~ msgstr "Redirect me to my AdBack dashboard"
+
+#~ msgid "Adback Account"
+#~ msgstr "Adback Account"
+
+#~ msgid "Log out"
+#~ msgstr "Log out"
+
+#~ msgid "Click the ad"
+#~ msgstr "Click the ad"
+
+#~ msgid "Disable your adblocker and reload the page to access this website"
+#~ msgstr "Disable your adblocker and reload the page to access this website"
+
+#~ msgid "Access this website without ads"
+#~ msgstr "Access this website without ads"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Placements"
+#~ msgstr "Placements"
+
+#~ msgid "Set up your AdBack account"
+#~ msgstr "Set up your AdBack account"
+
+#~ msgid "It's time to analyze your adblock users, set up your adback account!"
+#~ msgstr ""
+#~ "It's time to analyze your adblock users, set up your adback account!"
+
+#~ msgid ""
+#~ "It's time to analyze your adblock users, activate your adback account !"
+#~ msgstr ""
+#~ "It's time to analyze your adblocker users, activate your AdBack account!"
+
+#~ msgid ""
+#~ "There is an incompatibility with the WP Rocket plugin configuration, "
+#~ "please deactivate the iframe compression"
+#~ msgstr ""
+#~ "There is an incompatibility with the WP Rocket plugin configuration, "
+#~ "please deactivate the iframe optimisation."
+
+#~ msgid ""
+#~ "There is an incompatibility with the WP Lazy Load Rocket plugin "
+#~ "configuration, please deactivate the iframe compression"
+#~ msgstr ""
+#~ "There is an incompatibility with the WP Lazy Load Rocket plugin "
+#~ "configuration, please deactivate the iframe optimisation."
+
+#~ msgid "IAB Banners"
+#~ msgstr "IAB Banners"
+
+#~ msgid "Today"
+#~ msgstr "Today"
+
+#~ msgid "Period: Last 7 days"
+#~ msgstr "Period: Last 7 days"
+
+#~ msgid "Blocked page view and percent"
+#~ msgstr "Blocked page views and adblocker rate"
+
+#~ msgid "Blocked page view and percent - Sub"
+#~ msgstr ""
+#~ "Volume of blocked and non-blocked page views compared to adblocker users "
+#~ "rate"
+
+#~ msgid "New - former adblock users"
+#~ msgstr "New - former adblock users"
+
+#~ msgid "New - former adblock users - Sub"
+#~ msgstr "User who deactivated or reactivated its adblocker"
+
+#~ msgid ""
+#~ "When connecting to your AdBack dashboard, you'll discover the share of "
+#~ "your adblocker visitors using a whitelist, the type of adblocker they "
+#~ "use, the share of your analytics tools that are blocked (Google Analytics "
+#~ "and Xiti), the geolocation of your adblocker users, their connection "
+#~ "type, their operating system, the browser they use, on which device they "
+#~ "are ; as well as data about their behavior on your site: the referral "
+#~ "traffic, a list of your blocked pages, the bounce rate, the visit "
+#~ "duration and the recurrence..."
+#~ msgstr ""
+#~ "When connecting to your AdBack dashboard, you'll discover the share of "
+#~ "your adblocker visitors using a whitelist, the type of adblocker they "
+#~ "use, the share of your analytics tools that are blocked (Google Analytics "
+#~ "and Xiti), the geolocation of your adblocker users, their connection "
+#~ "type, their operating system, the browser they use, on which device they "
+#~ "are ; as well as data about their behavior on your site: the referral "
+#~ "traffic, a list of your blocked pages, the bounce rate, the visit "
+#~ "duration and the recurrence..."
+
+#~ msgid "https://www.adback.co/en/sites/dashboard"
+#~ msgstr "https://www.adback.co/en/sites/dashboard"
+
+#~ msgid ""
+#~ "Discover the top 10 of the blocked pages on your site and many other "
+#~ "statistics!"
+#~ msgstr ""
+#~ "Discover the top 10 of the blocked pages on your site and many other "
+#~ "statistics!"
+
+#~ msgid "https://www.adback.co/en/#prix"
+#~ msgstr "https://www.adback.co/en/#prix"
+
+#~ msgid ""
+#~ "https://wordpress.org/support/plugin/one-click-adblock-monetisation/"
+#~ "reviews/"
+#~ msgstr ""
+#~ "https://wordpress.org/support/plugin/one-click-adblock-monetisation/"
+#~ "reviews/"
+
+#~ msgid "AdBack Message"
+#~ msgstr "AdBack Message"
+
+#~ msgid "Free trial description"
+#~ msgstr ""
+#~ "Start your 14-day free trial and benefit from 10,000 FREE customizable "
+#~ "messages to communicate with your adblocked audience"
+
+#~ msgid "Free trial start"
+#~ msgstr "START FREE TRIAL"
+
+#~ msgid "AdBack Settings"
+#~ msgstr "AdBack Settings"
+
+#~ msgid "Yesterday"
+#~ msgstr "Yesterday"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Last 7 days"
+
+#~ msgid "Adblock removals"
+#~ msgstr "Adblock removals"
+
+#~ msgid "% adblock removals after showing message"
+#~ msgstr "% adblock removals after showing message"
+
+#~ msgid "No custom message enabled. You can enable it <a href=\"%s\">here</a>"
+#~ msgstr ""
+#~ "No custom message enabled. You can enable it <a href=\"%s\">here</a>"
+
+#~ msgid "Discover"
+#~ msgstr "Discover more data on AdBack.co"
+
+#~ msgid "Monetisation Statistics"
+#~ msgstr "Monetization Statics"
+
+#~ msgid "Activate and customize your message!"
+#~ msgstr "Activate and customize your message!"
+
+#~ msgid "Activate your message"
+#~ msgstr "Activate your message"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "Customize message description"
+#~ msgstr ""
+#~ "Click below to personalize the text and colors of your message, select a "
+#~ "template, a theme, add your logo and choose which alternative solutions "
+#~ "you want to propose to your adblocker users: deactivation, video, survey…"
+
+#~ msgid "Customize my message on AdBack.co"
+#~ msgstr "Customize my message on AdBack.co"
+
+#~ msgid "Display message"
+#~ msgstr "Display message"
+
+#~ msgid "No message for logged in Wordpress admin"
+#~ msgstr "No message for logged in WordPress admin"
+
+#~ msgid "Number"
+#~ msgstr "Number"
+
+#~ msgid "No data available, please"
+#~ msgstr "No data available, please"
+
+#~ msgid "refresh domain"
+#~ msgstr "refresh domain"
+
+#~ msgid "Register with Envato"
+#~ msgstr "Register with Envato"
+
+#~ msgid "Activate my Envato license"
+#~ msgstr "Activate my Envato license"
+
+#~ msgid ""
+#~ "If you downloaded the plugin from Envato, enter your key below and click "
+#~ "on Register"
+#~ msgstr ""
+#~ "If you downloaded the plugin from Envato, enter your key below and click "
+#~ "on Register"
+
+#~ msgid ""
+#~ "If you already are a registered user of AdBack.co, enter your login and "
+#~ "password below:"
+#~ msgstr ""
+#~ "If you already are a registered user of AdBack.co, enter your login and "
+#~ "password below:"
+
+#~ msgid "Envato License Key:"
+#~ msgstr "Envato License Key:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Username:"
+#~ msgstr "Username:"
+
+#~ msgid "Password:"
+#~ msgstr "Password:"
+
+#~ msgid "Domain:"
+#~ msgstr "Domain:"
+
+#~ msgid "Slug:"
+#~ msgstr "Slug:"
+
+#~ msgid "Select the slug for your website:"
+#~ msgstr "Select the slug for your website:"
+
+#~ msgid "Register / Login"
+#~ msgstr "Register / Login"
+
+#~ msgid "All the fields should be fill"
+#~ msgstr "All the fields should be filled"
+
+#~ msgid "Show warning message for user with ad blocker"
+#~ msgstr "Show a warning message to adblocker users"
+
+#~ msgid "Header text"
+#~ msgstr "Header text"
+
+#~ msgid "Text message"
+#~ msgstr "Text message"
+
+#~ msgid "Text close button"
+#~ msgstr "Close button text"
+
+#~ msgid "day"
+#~ msgstr "day"
+
+#~ msgid "Activate message description"
+#~ msgstr ""
+#~ "Now you have a better understanding of your adblocked audience, it's time "
+#~ "to activate your message.<br />Re-engage dialogue with your adblocked "
+#~ "audience and win back up to 60% of your lost ad revenue."

@@ -1,0 +1,552 @@
+#ocam-charts {
+    clear: both;
+}
+
+.ocam-lefty {
+    float: left;
+}
+
+.ocam-loading {
+    height: 300px;
+    width: 100%;
+}
+
+.ocam-button {
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #333333;
+    border-color: #eaeaea;
+    /*margin-top: 30px !important;*/
+}
+
+.ocam-button-primary {
+    background-color: #54AFF6;
+    color: #FFFFFF;
+    border: none;
+    /*margin-top: 30px !important;*/
+}
+
+.ocam-col-md-6 {
+    float: left;
+    width: 50%;
+}
+
+#ocam-login input {
+    width: 100%;
+}
+
+#ocam-login button {
+    padding: 30px;
+    margin-top: 30px;
+    line-height: 0px;
+}
+
+.ocam-login-envato-desc {
+    color: #666;
+}
+
+.ocam-login-box {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 11px;
+    padding: 24px;
+    background: white;
+    min-height: 420px;
+}
+
+.ocam-login-logo {
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 782px) {
+    .ocam-col-md-6 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.ocam-registration-advantages-box li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.ocam-registration-advantages-box li:before {
+    content: '- ';
+}
+
+.ocam-registration-advantages-intro {
+    padding: 10px;
+    color: #54AFF6;
+}
+
+.ocam-title {
+    color: #54AFF6;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ocam-discover {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 11px;
+    padding: 24px;
+    background: white;
+    min-height: 420px;
+}
+
+.ocam-discover.ocam-with-trial {
+    float: left;
+    width: calc(100% - 365px);
+}
+
+.ocam-trial-box {
+    float: left;
+    width: 220px;
+    margin-left: 20px;
+    border: 1px solid #54aff6;
+    border-radius: 11px;
+    padding: 24px;
+    background: #54aff6;
+    color: #FFFFFF;
+}
+
+#ocam-logout {
+    float: left;
+    background-color: #949494 !important;
+}
+
+.ocam-button:hover{
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.ocam-button-primary:hover {
+    background-color: #4098EA;
+}
+
+.ocam-registration-error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.ocam-registration-advantages-box {
+    margin-top: 20px;
+    border: solid 3px #e6e6e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.ocam-trial-box h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ocam-discover {
+    text-align: center;
+}
+
+.ocam-login-box.ocam-discover {
+    text-align: left;
+}
+
+.ocam-login-box.ocam-discover h2,
+.ocam-login-box.ocam-discover span {
+    display: block;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.ocam-primary-setting {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: white;
+    padding: 2rem;
+}
+
+#ab-full-app .ocam-primary-setting h4:not([class]) {
+    margin-bottom: 10px;
+}
+
+.ocam-h1 {
+    padding-bottom: 1em;
+}
+
+.ocam-top {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.ocam-top .ocam-actions {
+    float: right;
+    text-align: right;
+}
+
+.ocam-share .ocam-share-actions .ocam-tweet,
+.ocam-top .ocam-actions .ocam-tweet,
+.ocam-share .ocam-share-actions .ocam-review,
+.ocam-top .ocam-actions .ocam-review {
+    display: inline-block;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding-right: 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    line-height: 2.3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ocam-top .ocam-actions .ocam-tweet:focus,
+.ocam-top .ocam-actions .ocam-review:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ocam-top .ocam-actions .ocam-review {
+    background: #f9866b;
+    text-shadow: 0 1px 0 #e46b3d;
+}
+
+.ocam-top .ocam-actions .ocam-tweet span,
+.ocam-top .ocam-actions .ocam-review span {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.ocam-top .ocam-actions .ocam-tweet {
+    background: #52c4ef;
+    text-shadow: 0 1px 0 #33a4ce;
+}
+
+.ocam-top .ocam-actions .ocam-tweet span{
+    background: url(../partials/images/twitter_icon.png) no-repeat center center, #3eaed8;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAA2ElEQVR42o3RIUvEYBzH8b86UCwarDbRJiiIYLhoNVh9G2YFswbBN2A0mU0GwSJyl66KC4JoOJkmYfcJ2xi7u7EvfJb2wO/Z5vI8j46tM+KHqnlCPWa1w5B3vrnhmFMiLAhSrkiImkVSmmVcsFq++EauF/aJQo9p/XFEteCcegMuuWZafYJIQtpgxAqhbZjZZ/MjyuHu9ZGKKWs80rVdgmrBF09kqLUHXqktgE1S2srYIkrhUbfMbcvhQ6KuvP8JZwxaftse0ZQU9x9ywAK/LPHBM3fc889EY9XRpegVPS4oAAAAAElFTkSuQmCC");
+}
+
+.ocam-top .ocam-actions .ocam-review span{
+    background: url(../partials/images/review_icon.png) no-repeat center center, #f16848;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA3ElEQVR42pXSMctBURyA8et9xWJSMEpIYZHBYrCwGK2+gI9h9CGUDIrJYJaVwS4lyhcAUbieM9w6cc8/96lf3e49nXtO5/hs27aE4jjiCtf+IDVCB+ZYgUkVqguihjHiBDM4db1OUIHeCRG3sX6LKIAkMkijBb0Q+phijQ32eKpTWPBQxD+8dEdPLaOBG7x2QNbZSx0X/NoOKVifx3YGiW2RMJ1CGyRW0sZ/3cQoSCwmXeUcSCwvTVCA0wtDzKWf6PsP4gHVBAXtWw1LqFamqxzGGGVYLnxoYqC/fwOWtAIAwkAFJgAAAABJRU5ErkJggg==");
+}
+
+
+.ocam-top {
+    margin: 20px 0 15px;
+    padding: 20px 10px;
+    border-top: 5px solid #252b37;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+@media screen and (max-width: 800px) {
+    .ocam-discover,
+    .ocam-discover.ocam-with-trial {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .ocam-trial-box {
+        float: none;
+        width: 90%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.ocam-discover p {
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ocam-progress {
+    height: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 0 #000;
+    border-radius: 3px;
+    border: 1px solid #f1f1f1;
+    background-color: #FFFFFF;
+}
+
+.ocam-progress .ocam-progress-bar {
+    box-shadow: 0 0 0 #000;
+}
+
+.ocam-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #50D050;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+/*
+a.button.button-ab {
+    background: #54aff6 !important;
+    color: #ffffff !important;
+    !*margin: 18px 0 34px;*!
+    height: 50px;
+    border: 1px #54aff6 solid;
+    border-radius: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 52px;
+    text-shadow: none;
+}
+
+.ocam-trial-box a.button.button-ab {
+    background: #FFFFFF !important;
+    color: #50D050 !important;
+    margin: 18px 0 34px;
+    height: 50px;
+    border: 1px #50D050 solid;
+    border-radius: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 52px;
+    text-shadow: none;
+}*/
+
+.ocam-top .slogan a {
+    color: #858585;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    -webkit-transition: all 0.250s ease-in-out;
+    transition: all 0.250s ease-in-out;
+}
+
+.ocam-top .slogan a:hover {
+    color: #0073aa;
+}
+
+.ocam-top .slogan a:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.not-representative-data-chart {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: rgba(0,0,0,.2);
+    background: #f8f8f8;
+    min-height: 8em;
+}
+
+.hide {
+    display: none;
+}
+
+.block-graph{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.col-9 {
+    display: inline-block;
+    width: 75%;
+}
+
+.col-3 {
+    display: inline-block;
+    width: 25%;
+}
+
+.ocam-top .logo {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 55px;
+    color: #3c3c3c;
+    background: url(../partials/images/_dback.png) no-repeat left center;
+    background-size: 50px 48px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.ocam-top .slogan {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 0;
+    color: #858585;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 3.5;
+}
+
+.ad-back-diagnostic-rules tr:hover {
+    background-color: #f5f5f5
+}
+
+.adback-incentive {
+    min-width: 825px;
+    border: 1px solid #0079b1;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    background: #0079b1;
+    background-image: -webkit-gradient(linear, 0% 0, 80% 100%, from(#8abedb), to(#1d86bc));
+    background-image: -moz-linear-gradient(80% 100% 120deg, #8abedb, #1d86bc);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.adback-incentive .adback-incentive-button-border {
+    border: 1px solid #006699;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: #029DD6;
+    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#8abedb), to(#1d86bc));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #8abedb, #1d86bc);
+}
+
+.adback-incentive .adback-incentive-button-container {
+    display: inline-block;
+    background: #ffffff;
+    padding: 5px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    width: 266px;
+}
+
+.adback-incentive .adback-incentive-description {
+    position: absolute;
+    top: 22px;
+    left: 285px;
+    margin-left: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    z-index: 1000;
+}
+
+.adback-incentive .adback-incentive-description strong {
+    color: #FFF;
+    font-weight: normal;
+}
+
+.ocam-refuse-adback {
+    width: 100%;
+    margin-top: 30px;
+    color: #d00303bd;
+}
+
+.adback-incentive .adback-incentive-button {
+    font-weight: bold;
+    border: 1px solid #029DD6;
+    border-top: 1px solid #06B9FD;
+    font-size: 15px;
+    text-align: center;
+    padding: 9px 0 8px 0;
+    color: #FFF;
+    background: #029DD6;
+    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#8abedb), to(#1d86bc));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #8abedb, #1d86bc);
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    width: 100%;
+    cursor: pointer;
+    margin: 0;
+}
+
+.adback-incentive .adback-incentive-button:hover {
+    text-decoration: none !important;
+    border: 1px solid #029DD6;
+    border-bottom: 1px solid #00A8EF;
+    font-size: 15px;
+    text-align: center;
+    padding: 9px 0 8px 0;
+    color: #F0F8FB;
+    background: #0079B1;
+    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#8abedb), to(#1d86bc));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #8abedb, #1d86bc);
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.ad-back-diagnostic {
+    font-size: larger;
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ad-back-diagnostic th, .ad-back-diagnostic td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ad-back-diagnostic tr:hover {
+    background-color: #f5f5f5
+}
+
+.ad-back-diagnostic-rules {
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ad-back-diagnostic-rules th {
+    font-size: larger;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ad-back-diagnostic-rules td {
+    font-size: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    max-width: 200px;
+}
+
+.ad-back-diagnostic-rules .ad-back-rule-adback {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+

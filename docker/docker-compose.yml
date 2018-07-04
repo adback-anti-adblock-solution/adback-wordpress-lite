@@ -4,7 +4,7 @@ services:
   wordpress_lite:
     image: wordpress:latest
     volumes:
-    - ./../adback-solution-to-adblock-lite:/var/www/html/wp-content/plugins/adback-solution-to-adblock-lite
+    - ./../one-click-adblock-monetisation:/var/www/html/wp-content/plugins/one-click-adblock-monetisation
     ports:
     - "8101:80"
     environment:
