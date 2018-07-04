@@ -27,7 +27,7 @@
  * @subpackage One_Click_Adblock_Monetisation/includes
  * @author     AdBack <contact@adback.co>
  */
-class Ad_Back_Lite
+class One_Click_Adblock_Monetisation
 {
     /**
      * The loader that's responsible for maintaining and registering all hooks that power
@@ -99,24 +99,24 @@ class Ad_Back_Lite
          * The class responsible for orchestrating the actions and filters of the
          * core plugin.
          */
-        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ad-back-loader.php';
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ocam-loader.php';
 
         /**
          * The class responsible for defining internationalization functionality
          * of the plugin.
          */
-        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ad-back-i18n.php';
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ocam-i18n.php';
 
         /**
          * The class responsible for defining all actions that occur in the admin area.
          */
-        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-ad-back-admin.php';
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-ocam-admin.php';
 
         /**
          * The class responsible for defining all actions that occur in the public-facing
          * side of the site.
          */
-        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-ad-back-public.php';
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-ocam-public.php';
 
         $this->loader = new Ocam_Loader();
     }

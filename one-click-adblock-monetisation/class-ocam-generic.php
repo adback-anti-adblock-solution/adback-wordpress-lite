@@ -7,7 +7,7 @@
  * @since      1.0.0
  *
  * @package    One_Click_Adblock_Monetisation
- * @subpackage Ad_Back_Lite
+ * @subpackage One_Click_Adblock_Monetisation
  */
 class Ocam_Generic
 {

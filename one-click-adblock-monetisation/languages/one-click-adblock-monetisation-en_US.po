@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: one-click-adblock-monetisation\n"
-"POT-Creation-Date: 2018-07-04 11:28+0200\n"
+"POT-Creation-Date: 2018-06-13 16:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,122 +16,122 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/ocam-admin.php:98
+#: admin/class-ocam-admin.php:111
 msgid "Bounce rate of adblocker users"
 msgstr "Bounce rate of adblocker users"
 
-#: admin/ocam-admin.php:99
+#: admin/class-ocam-admin.php:112
 msgid "Adblocker activation / deactivation"
 msgstr "Adblocker activation / deactivation"
 
-#: admin/ocam-admin.php:100
+#: admin/class-ocam-admin.php:113
 msgid "Ad blocker percent"
 msgstr "Adblocker users rate"
 
-#: admin/ocam-admin.php:101
+#: admin/class-ocam-admin.php:114
 msgid "Blocked page views"
 msgstr "Blocked page views"
 
-#: admin/ocam-admin.php:102
+#: admin/class-ocam-admin.php:115
 msgid "Browser"
 msgstr "Browsers used by adblocker users"
 
-#: admin/ocam-admin.php:103
+#: admin/class-ocam-admin.php:116
 msgid "OS"
 msgstr "Operating systems used by adblocker users"
 
-#: admin/ocam-admin.php:104
+#: admin/class-ocam-admin.php:117
 msgid "Percent adblock users"
 msgstr "Adblocker users rate"
 
-#: admin/ocam-admin.php:105
+#: admin/class-ocam-admin.php:118
 msgid "Percent bounce adblock users"
 msgstr "Bounce rate of adblocker users"
 
-#: admin/ocam-admin.php:106
+#: admin/class-ocam-admin.php:119
 msgid "Percent bounce all users"
 msgstr "Global bounce rate"
 
-#: admin/ocam-admin.php:107
+#: admin/class-ocam-admin.php:120
 msgid "Oops..."
 msgstr "Oops..."
 
-#: admin/ocam-admin.php:108
+#: admin/class-ocam-admin.php:121
 msgid "Invalid email or password"
 msgstr "Invalid email or password"
 
-#: admin/ocam-admin.php:109
+#: admin/class-ocam-admin.php:122
 msgid "The key, email and domain fields should be filled"
 msgstr "The key, email and domain fields should be filled"
 
-#: admin/ocam-admin.php:110
+#: admin/class-ocam-admin.php:123
 msgid "The email and password fields should be filled"
 msgstr "The email and password fields should be filled"
 
-#: admin/ocam-admin.php:111
+#: admin/class-ocam-admin.php:124
 msgid "There is an error in the registration: {0}"
 msgstr "There is an error in the registration: {0}"
 
-#: admin/ocam-admin.php:112
+#: admin/class-ocam-admin.php:125
 msgid "Users having ad blocker"
 msgstr "Users that activated an adblocker"
 
-#: admin/ocam-admin.php:113
+#: admin/class-ocam-admin.php:126
 msgid "Users who have disabled an ad blocker"
 msgstr "Users who have disabled an adblocker"
 
-#: admin/ocam-admin.php:114
+#: admin/class-ocam-admin.php:127
 msgid "Percent page view with AdBlock"
 msgstr "Proportion of page views with an adblocker"
 
-#: admin/ocam-admin.php:115
+#: admin/class-ocam-admin.php:128
 msgid "Percent page view"
 msgstr "Proportion of page views without adblocker"
 
-#: admin/ocam-admin.php:116
+#: admin/class-ocam-admin.php:129
 msgid "days"
 msgstr "days"
 
-#: admin/ocam-admin.php:117
+#: admin/class-ocam-admin.php:130
 msgid "Loading ..."
 msgstr "Loading..."
 
-#: admin/ocam-admin.php:118
+#: admin/class-ocam-admin.php:131
 msgid "No Data"
 msgstr "No Data"
 
-#: admin/ocam-admin.php:119
+#: admin/class-ocam-admin.php:132
 msgid "Something went wrong"
 msgstr "Something went wrong"
 
-#: admin/ocam-admin.php:260
-msgid "Statistics"
-msgstr "Statistics"
-
-#: admin/ocam-admin.php:261
-msgid "Diagnostic"
-msgstr "Diagnostic"
-
-#: admin/ocam-admin.php:341
-msgid "Activate my AdBack plugin"
-msgstr "Activate my AdBack plugin"
-
-#: admin/ocam-admin.php:345
-msgid "It's time to analyze your adblock users, set up your AdBack account!"
-msgstr "It's time to analyze your adblocker users, set up your AdBack account!"
-
-#: admin/ocam-admin.php:374
+#: admin/class-ocam-admin.php:190
 #, php-format
 msgid "You must be log in to see stats. Go to <a href=\"%s\">Log in page</a>"
 msgstr ""
 "You must be logged to see the statistics. Go to the <a href=\"%s\">login "
 "page</a>"
 
-#: admin/partials/ocam-diagnostic.php:14
+#: admin/class-ocam-admin.php:291
+msgid "Statistics"
+msgstr "Statistics"
+
+#: admin/class-ocam-admin.php:292
+msgid "Diagnostic"
+msgstr "Diagnostic"
+
+#: admin/class-ocam-admin.php:372
+msgid "Activate my AdBack plugin"
+msgstr "Activate my AdBack plugin"
+
+#: admin/class-ocam-admin.php:376
+msgid "It's time to analyze your adblock users, set up your AdBack account!"
+msgstr "It's time to analyze your adblocker users, set up your AdBack account!"
+
+#: admin/partials/ocam-diagnostic.php:17
 msgid "AdBack : The stats of your AdBlock audience"
 msgstr "AdBack: The statistics of your adblocked audience"
 
-#: admin/partials/ocam-diagnostic.php:17
+#: admin/partials/ocam-diagnostic.php:20
 msgid "Statistics description"
 msgstr ""
 "Use AdBack to understand your adblocked audience, to engage them with "
@@ -158,11 +158,11 @@ msgstr "Tweet about it"
 msgid "Leave a review"
 msgstr "Leave a review"
 
-#: admin/partials/ocam-login-display.php:11
+#: admin/partials/ocam-login-display.php:16
 msgid "AdBack"
 msgstr "AdBack"
 
-#: admin/partials/ocam-login-display.php:20
+#: admin/partials/ocam-login-display.php:25
 msgid ""
 "You already have an AdBack account. Connect to your account by clicking on "
 "the \"Log in\" link below the button :"
@@ -170,7 +170,7 @@ msgstr ""
 "You already have an AdBack account. Connect to your account by clicking on "
 "the \"Log in\" link below the button:"
 
-#: admin/partials/ocam-login-display.php:24
+#: admin/partials/ocam-login-display.php:29
 msgid ""
 "An error occured during your registration. Click on the \"Create my AdBack "
 "account\" button to try again."
@@ -178,12 +178,12 @@ msgstr ""
 "An error occured during your registration. Click on the « Create my AdBack "
 "account » button to try again."
 
-#: admin/partials/ocam-login-display.php:27
+#: admin/partials/ocam-login-display.php:32
 msgid "Why create an AdBack account ?"
 msgstr "Why create an AdBack account?"
 
-#: admin/partials/ocam-login-display.php:28
-#: admin/partials/ocam-login-display.php:48
+#: admin/partials/ocam-login-display.php:33
+#: admin/partials/ocam-login-display.php:53
 msgid ""
 "AdBack is an analytics and monetization tool of your adblock audience. It is "
 "100&#37; free and without obligation. By authorizing AdBack, you will access:"
@@ -191,33 +191,33 @@ msgstr ""
 "AdBack is an analytics and monetization tool of your adblock audience. It is "
 "100&#37; free and without obligation. By authorizing AdBack, you will access:"
 
-#: admin/partials/ocam-login-display.php:30
-#: admin/partials/ocam-login-display.php:50
+#: admin/partials/ocam-login-display.php:35
+#: admin/partials/ocam-login-display.php:55
 msgid "A unique and unblockable technology"
 msgstr "A unique and unblockable technology"
 
-#: admin/partials/ocam-login-display.php:31
-#: admin/partials/ocam-login-display.php:51
+#: admin/partials/ocam-login-display.php:36
+#: admin/partials/ocam-login-display.php:56
 msgid "Detailed statistics directly on your WordPress and AdBack interface"
 msgstr "Detailed statistics directly on your WordPress and AdBack interface"
 
-#: admin/partials/ocam-login-display.php:32
-#: admin/partials/ocam-login-display.php:52
+#: admin/partials/ocam-login-display.php:37
+#: admin/partials/ocam-login-display.php:57
 msgid "Unique and user-friendly monetization solutions"
 msgstr "Unique and user-friendly monetization solutions"
 
-#: admin/partials/ocam-login-display.php:36
-#: admin/partials/ocam-login-display.php:56
+#: admin/partials/ocam-login-display.php:41
+#: admin/partials/ocam-login-display.php:61
 msgid "By activating the plugin:"
 msgstr "By activating the plugin:"
 
-#: admin/partials/ocam-login-display.php:38
-#: admin/partials/ocam-login-display.php:58
+#: admin/partials/ocam-login-display.php:43
+#: admin/partials/ocam-login-display.php:63
 msgid "You accept the AdBack Terms of Service"
 msgstr "You accept the AdBack Terms of Service"
 
-#: admin/partials/ocam-login-display.php:39
-#: admin/partials/ocam-login-display.php:59
+#: admin/partials/ocam-login-display.php:44
+#: admin/partials/ocam-login-display.php:64
 msgid ""
 "The application will collect automatically the name of your website and the "
 "associated email address.<br>&ensp; That address will be used to give you "
@@ -227,8 +227,8 @@ msgstr ""
 "associated email address.<br>&ensp; That address will be used to give you "
 "the information related to your account and to the AdBack news and products"
 
-#: admin/partials/ocam-login-display.php:40
-#: admin/partials/ocam-login-display.php:60
+#: admin/partials/ocam-login-display.php:45
+#: admin/partials/ocam-login-display.php:65
 msgid ""
 "The application will install the AdBack script, necessary to display the "
 "analytics and monetization solutions"
@@ -236,29 +236,29 @@ msgstr ""
 "The application will install the AdBack script, necessary to display the "
 "analytics and monetization solutions"
 
-#: admin/partials/ocam-login-display.php:43
-#: admin/partials/ocam-login-display.php:63
+#: admin/partials/ocam-login-display.php:48
+#: admin/partials/ocam-login-display.php:68
 msgid ""
 "<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
 msgstr ""
 "<a href=\"https://landing.adback.co/en/legal-notice/\">Terms of Service</a>"
 
-#: admin/partials/ocam-login-display.php:43
-#: admin/partials/ocam-login-display.php:63
+#: admin/partials/ocam-login-display.php:48
+#: admin/partials/ocam-login-display.php:68
 msgid ""
 "<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
 msgstr ""
 "<a href=\"https://landing.adback.co/en/privacy-policy/\">Privacy Policy</a>"
 
-#: admin/partials/ocam-login-display.php:77
+#: admin/partials/ocam-login-display.php:82
 msgid "Create my AdBack account"
 msgstr "Create my AdBack account"
 
-#: admin/partials/ocam-login-display.php:82
+#: admin/partials/ocam-login-display.php:87
 msgid "Log in"
 msgstr "Log in"
 
-#: admin/partials/ocam-login-display.php:86
+#: admin/partials/ocam-login-display.php:91
 msgid "Refuse (you won’t be able to use AdBack solutions)"
 msgstr "Refuse (you won’t be able to use AdBack solutions)"
 
@@ -334,7 +334,7 @@ msgstr "Access to help"
 msgid "An issue ?"
 msgstr "Problem?"
 
-#: public/class-ocam-public.php:93
+#: public/class-ad-back-public.php:93
 msgid ""
 "If you have clicked on the banner or deactivate your adblock and you still "
 "see this message, report it to us below."
@@ -342,23 +342,23 @@ msgstr ""
 "If you clicked on the ad or deactivated your adblocker and still see this "
 "message, report the problem below."
 
-#: public/class-ocam-public.php:94
+#: public/class-ad-back-public.php:94
 msgid "Report a bug"
 msgstr "Report a bug"
 
-#: public/class-ocam-public.php:95
+#: public/class-ad-back-public.php:95
 msgid "Verification in progress"
 msgstr "Verification in progress"
 
-#: public/class-ocam-public.php:96
+#: public/class-ad-back-public.php:96
 msgid "Thank you for your help"
 msgstr "Thank you for your help"
 
-#: public/class-ocam-public.php:97
+#: public/class-ad-back-public.php:97
 msgid "Who are we ?"
 msgstr "Who are we?"
 
-#: public/class-ocam-public.php:98
+#: public/class-ad-back-public.php:98
 msgid ""
 "Thanks to AdBack, you can monetize your adblocked audience by displaying "
 "users friendly banners."
@@ -366,7 +366,7 @@ msgstr ""
 "With AdBack, monetize your adblocked audience by displaying ads that respect "
 "user’s experience."
 
-#: public/class-ocam-public.php:99
+#: public/class-ad-back-public.php:99
 msgid "Discover AdBack"
 msgstr "Discover AdBack"
 

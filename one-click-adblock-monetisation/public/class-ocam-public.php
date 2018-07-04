@@ -3,25 +3,12 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://www.adback.co
  * @since      1.0.0
- *
  * @package    One_Click_Adblock_Monetisation
  * @subpackage One_Click_Adblock_Monetisation/public
  */
 
-/**
- * The public-facing functionality of the plugin.
- *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
- *
- * @package    One_Click_Adblock_Monetisation
- * @subpackage One_Click_Adblock_Monetisation/public
- * @author     AdBack
- */
-
-include_once(plugin_dir_path( __FILE__ ) . '../class-ad-back.php');
+include_once(plugin_dir_path( __FILE__ ) . '../class-ocam-generic.php');
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 class Ocam_Public extends Ocam_Generic

@@ -9,12 +9,12 @@
  * that starts the plugin.
  *
  * @since             1.0.0
- * @package           Ad_Back_Lite
+ * @package           One_Click_Adblock_Monetisation
  *
  * @wordpress-plugin
  * Plugin Name:       One Click Adblock Monetization
- * Plugin URI:        adback.co
- * Description:       With AdBack, access analytics about adblocker users, address them personalized messages, propose alternative solutions to advertising (video, survey).
+ * Plugin URI:        https://landing.adback.co
+ * Description:       Automatically display a footer message offering your users the possibility to turn off their adblocker or to click on an ad to access the website.
  * Version:           1.0.0
  * Author:            AdBack
  * Author URI:        https://www.adback.co
@@ -37,15 +37,15 @@ function ocam_action_links( $links ) {
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-ad-back-activator.php
+ * This action is documented in includes/class-ocam-activator.php
  */
 function activate_ad_back_lite($networkwide) {
     if (!current_user_can( 'activate_plugins' ) )
         return;
 
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-activator.php';
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-updator.php';
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-get.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-activator.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-updator.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-get.php';
     Ocam_Activator::activate($networkwide);
     Ocam_Updator::update();
 
@@ -55,13 +55,13 @@ function activate_ad_back_lite($networkwide) {
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-ad-back-deactivator.php
+ * This action is documented in includes/class-ocam-deactivator.php
  */
 function deactivate_ad_back_lite() {
     if (!current_user_can( 'activate_plugins' ) )
         return;
 
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-deactivator.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-deactivator.php';
     Ocam_Deactivator::deactivate();
 }
 
@@ -75,7 +75,7 @@ function adback_lite_admin_notices() {
 }
 
 function adback_lite_plugins_loaded() {
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-updator.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-updator.php';
     Ocam_Updator::update();
 }
 
@@ -114,7 +114,7 @@ function adback_lite_plugin_query_vars($vars) {
 function adback_lite_plugin_display() {
     $adback_page_name = get_query_var('pagename');
     if ('adback_proxy' == $adback_page_name):
-        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-proxy.php';
+        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-proxy.php';
         $adback_request = get_query_var('adback_request');
         Ocam_Proxy::execute($adback_request);
         exit;
@@ -133,7 +133,7 @@ function adback_lite_plugin_display() {
 
 function adback_lite_new_blog($blogId) {
     if (is_plugin_active_for_network( 'one-click-adblock-monetisation/ad-back.php') ) {
-        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-activator.php';
+        require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-activator.php';
 
         switch_to_blog($blogId);
         Ocam_Activator::initializeBlog();
@@ -142,7 +142,7 @@ function adback_lite_new_blog($blogId) {
 }
 
 function adback_lite_delete_blog($tables) {
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-deactivator.php';
+    require_once plugin_dir_path( __FILE__ ) . 'includes/class-ocam-deactivator.php';
     Ocam_Deactivator::deleteBlog($tables);
 }
 
@@ -162,9 +162,9 @@ add_filter('template_redirect', 'adback_lite_plugin_display');
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-ad-back.php';
-require plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-get.php';
-require plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-post.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-ocam.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-ocam-get.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-ocam-post.php';
 
 /**
  * Begins execution of the plugin.
@@ -177,7 +177,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-ad-back-post.php';
  */
 function run_ad_back_lite() {
 
-    $plugin = new Ad_Back_Lite();
+    $plugin = new One_Click_Adblock_Monetisation();
     $plugin->run();
 
 }

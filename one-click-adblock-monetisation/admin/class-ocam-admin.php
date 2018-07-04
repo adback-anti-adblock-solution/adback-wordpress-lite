@@ -8,7 +8,7 @@
  * @author     AdBack <contact@adback.co>
  */
 
-include_once(plugin_dir_path(__FILE__) . '../class-ad-back.php');
+include_once plugin_dir_path(__FILE__) . '../class-ocam-generic.php';
 
 class Ocam_Admin extends Ocam_Generic
 {
@@ -348,7 +348,7 @@ class Ocam_Admin extends Ocam_Generic
                     </form>
                 </div>';
             }
-            require_once plugin_dir_path(__FILE__) . '../includes/class-ad-back-external-checker.php';
+            require_once plugin_dir_path(__FILE__) . '../includes/class-ocam-external-checker.php';
             Ocam_External_Checker::check();
         }
     }

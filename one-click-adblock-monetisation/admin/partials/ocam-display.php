@@ -14,7 +14,7 @@
 ?>
 <?php include "ocam-header.php" ?>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-<div id="ocam-full-app">
+<div id="ab-full-app">
     <div id="adb-stats-lite"
          data-reviewlink="https://wordpress.org/support/plugin/one-click-adblock-monetisation/reviews/"
          data-supportlink="https://wordpress.org/support/plugin/one-click-adblock-monetisation">

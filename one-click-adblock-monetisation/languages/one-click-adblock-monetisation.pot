@@ -15,112 +15,112 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-ad-back-admin.php:111
+#: admin/class-ocam-admin.php:111
 msgid "Bounce rate of adblocker users"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:112
+#: admin/class-ocam-admin.php:112
 msgid "Adblocker activation / deactivation"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:113
+#: admin/class-ocam-admin.php:113
 msgid "Ad blocker percent"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:114
+#: admin/class-ocam-admin.php:114
 msgid "Blocked page views"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:115
+#: admin/class-ocam-admin.php:115
 msgid "Browser"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:116
+#: admin/class-ocam-admin.php:116
 msgid "OS"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:117
+#: admin/class-ocam-admin.php:117
 msgid "Percent adblock users"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:118
+#: admin/class-ocam-admin.php:118
 msgid "Percent bounce adblock users"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:119
+#: admin/class-ocam-admin.php:119
 msgid "Percent bounce all users"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:120
+#: admin/class-ocam-admin.php:120
 msgid "Oops..."
 msgstr ""
 
-#: admin/class-ad-back-admin.php:121
+#: admin/class-ocam-admin.php:121
 msgid "Invalid email or password"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:122
+#: admin/class-ocam-admin.php:122
 msgid "The key, email and domain fields should be filled"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:123
+#: admin/class-ocam-admin.php:123
 msgid "The email and password fields should be filled"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:124
+#: admin/class-ocam-admin.php:124
 msgid "There is an error in the registration: {0}"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:125
+#: admin/class-ocam-admin.php:125
 msgid "Users having ad blocker"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:126
+#: admin/class-ocam-admin.php:126
 msgid "Users who have disabled an ad blocker"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:127
+#: admin/class-ocam-admin.php:127
 msgid "Percent page view with AdBlock"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:128
+#: admin/class-ocam-admin.php:128
 msgid "Percent page view"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:129
+#: admin/class-ocam-admin.php:129
 msgid "days"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:130
+#: admin/class-ocam-admin.php:130
 msgid "Loading ..."
 msgstr ""
 
-#: admin/class-ad-back-admin.php:131
+#: admin/class-ocam-admin.php:131
 msgid "No Data"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:132
+#: admin/class-ocam-admin.php:132
 msgid "Something went wrong"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:190
+#: admin/class-ocam-admin.php:190
 #, php-format
 msgid "You must be log in to see stats. Go to <a href=\"%s\">Log in page</a>"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:291
+#: admin/class-ocam-admin.php:291
 msgid "Statistics"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:292
+#: admin/class-ocam-admin.php:292
 msgid "Diagnostic"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:372
+#: admin/class-ocam-admin.php:372
 msgid "Activate my AdBack plugin"
 msgstr ""
 
-#: admin/class-ad-back-admin.php:376
+#: admin/class-ocam-admin.php:376
 msgid "It's time to analyze your adblock users, set up your AdBack account!"
 msgstr ""
 
@@ -176,74 +176,74 @@ msgstr ""
 msgid "Refresh domain..."
 msgstr ""
 
-#: includes/class-ad-back-activator.php:166
+#: includes/class-ocam-activator.php:166
 msgid "Registration error"
 msgstr ""
 
-#: includes/class-ad-back-external-checker.php:38
+#: includes/class-ocam-external-checker.php:38
 msgid "There is an incompatibility between the WP Rocket plugin and AdBack. Please uncheck the box \"Enable for iframes and videos\" in Settings > WP Rocket > Basic > LazyLoad to continue using AdBack. This change won't interfere with the operation of your website."
 msgstr ""
 
-#: includes/class-ad-back-external-checker.php:46
+#: includes/class-ocam-external-checker.php:46
 msgid "There is an incompatibility between the LazyLoad plugin and AdBack. Please uncheck the box \"iframes and videos\" in Settings > LazyLoad to continue using AdBack. This change won't interfere with the operation of your website."
 msgstr ""
 
-#: public/class-ad-back-public.php:85
+#: public/class-ocam-public.php:85
 msgid "To access the website"
 msgstr ""
 
-#: public/class-ad-back-public.php:86
+#: public/class-ocam-public.php:86
 msgid "Deactivate your adblock<br/>then reload the page."
 msgstr ""
 
-#: public/class-ad-back-public.php:87
+#: public/class-ocam-public.php:87
 msgid "Or click on the banner<br/>nearby"
 msgstr ""
 
-#: public/class-ad-back-public.php:88
+#: public/class-ocam-public.php:88
 msgid "Close"
 msgstr ""
 
-#: public/class-ad-back-public.php:89
+#: public/class-ocam-public.php:89
 msgid "Why do I see this message ?"
 msgstr ""
 
-#: public/class-ad-back-public.php:90
+#: public/class-ocam-public.php:90
 msgid "Your browser blocks the ads on this website. To discover how to access it, find the help down here."
 msgstr ""
 
-#: public/class-ad-back-public.php:91
+#: public/class-ocam-public.php:91
 msgid "Access help page"
 msgstr ""
 
-#: public/class-ad-back-public.php:92
+#: public/class-ocam-public.php:92
 msgid "An issue ?"
 msgstr ""
 
-#: public/class-ad-back-public.php:93
+#: public/class-ocam-public.php:93
 msgid "If you have clicked on the banner or deactivate your adblock and you still see this message, report it to us below."
 msgstr ""
 
-#: public/class-ad-back-public.php:94
+#: public/class-ocam-public.php:94
 msgid "Report a bug"
 msgstr ""
 
-#: public/class-ad-back-public.php:95
+#: public/class-ocam-public.php:95
 msgid "Verification in progress"
 msgstr ""
 
-#: public/class-ad-back-public.php:96
+#: public/class-ocam-public.php:96
 msgid "Thank you for your help"
 msgstr ""
 
-#: public/class-ad-back-public.php:97
+#: public/class-ocam-public.php:97
 msgid "Who are we ?"
 msgstr ""
 
-#: public/class-ad-back-public.php:98
+#: public/class-ocam-public.php:98
 msgid "Thanks to AdBack, you can monetize your adblocked audience by displaying users friendly banners."
 msgstr ""
 
-#: public/class-ad-back-public.php:99
+#: public/class-ocam-public.php:99
 msgid "Discover AdBack"
 msgstr ""
