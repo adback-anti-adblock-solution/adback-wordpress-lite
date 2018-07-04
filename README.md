@@ -1,6 +1,6 @@
-# adback-wordpress
+# one-click-adblock-monetisation
 ## Compilation
-- Zip files in `/adback-solution-to-adblock` to `adback-solution-to-adblock.zip`
+- Zip files in `/one-click-adblock-monetisation` to `one-click-adblock-monetisation.zip`
 - Done.
 
 ## Translation
